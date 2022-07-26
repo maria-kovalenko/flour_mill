@@ -112,6 +112,7 @@ input[type="radio"].visually-hidden {
   padding-top: 30px;
 }
 
+// -------------------------------- header__toggle ---------------------
 .header__toggle {
   position: relative;
   width: 28px;
@@ -160,6 +161,8 @@ input[type="radio"].visually-hidden {
   }
 }
 
+// -------------------------------- header__icons ---------------------
+
 .header__icons {
   display: flex;
 }
@@ -168,14 +171,17 @@ input[type="radio"].visually-hidden {
   display: none;
   margin-right: 20px;
 }
+// -------------------------------- header__navigation ---------------------
 
 .header__navigation {
   display: none;
 }
+// -------------------------------- header__language ---------------------
 
 .header__language {
   display: none;
 }
+// -------------------------------- social ---------------------
 
 .social {
   margin: 0 auto;
@@ -186,11 +192,6 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 
-.header__social {
-  margin-top: 14px;
-  margin-bottom: 18px;
-}
-
 .social__item {
   margin-right: 20px;
 
@@ -198,6 +199,13 @@ input[type="radio"].visually-hidden {
     margin-right: 0;
   }
 }
+// -------------------------------- header__social ---------------------
+
+.header__social {
+  margin-top: 14px;
+  margin-bottom: 18px;
+}
+// -------------------------------- contacts ---------------------
 
 .contacts {
   margin: 0 auto;
@@ -207,6 +215,34 @@ input[type="radio"].visually-hidden {
 .contacts__number {
   font-weight: 800;
   margin-right: 8px;
+}
+
+// -------------------------------- page-main__header ---------------------
+
+.page-main__header {
+  display: flex;
+  align-items: center;
+}
+
+.page-main__logo {
+  width: 143px;
+  height: 183px;
+  margin-right: 14px;
+  flex-shrink: 0;
+}
+
+.page-main__title-wrapper {
+  min-width: 188px;
+}
+.page-main__title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 110%;
+  color: $bg-lightbrown;
+
+  span {
+    color: $bg-orange;
+  }
 }
 
 .products {
