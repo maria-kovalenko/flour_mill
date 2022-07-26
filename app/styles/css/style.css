@@ -51,6 +51,7 @@ a {
   box-shadow: 3px 4px 30px 0 rgba(203,173,149,.8)
 }
 button {
+  display: inline-block;
   border: none;
   background-color: transparent
 }
@@ -71,6 +72,111 @@ input[type=radio].visually-hidden {
 }
 .container {
   margin: 0 19px
+}
+.header {
+  margin-bottom: 12px
+}
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-top: 30px
+}
+.header__toggle {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer
+}
+.header__toggle--closed::before {
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: 2px;
+  width: 24px;
+  height: 2.4px;
+  border-radius: 10px;
+  background-color: #a28276;
+  -webkit-box-shadow: 0 8px 0 0 #a28276,0 16px 0 0 #a28276;
+  box-shadow: 0 8px 0 0 #a28276,0 16px 0 0 #a28276
+}
+.header__toggle--opened::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: calc(50% - 12px);
+  width: 24px;
+  height: 2.4px;
+  border-radius: 50px;
+  background-color: #a28276;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg)
+}
+.header__toggle--opened::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: calc(50% - 12px);
+  width: 24px;
+  height: 2.4px;
+  border-radius: 10px;
+  background-color: #a28276;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg)
+}
+.header__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.header__search {
+  display: none;
+  margin-right: 20px
+}
+.header__navigation {
+  display: none
+}
+.header__language {
+  display: none
+}
+.social {
+  margin: 0 auto;
+  width: 240px
+}
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.header__social {
+  margin-top: 14px;
+  margin-bottom: 18px
+}
+.social__item {
+  margin-right: 20px
+}
+.social__item:last-child {
+  margin-right: 0
+}
+.contacts {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.contacts__number {
+  font-weight: 800;
+  margin-right: 8px
 }
 .products {
   display: none
