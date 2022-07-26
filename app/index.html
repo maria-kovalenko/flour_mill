@@ -272,21 +272,161 @@
       </head>
 
       <div class="slider-advantages swiper">
+        <div class="swiper-pagination"></div>
         <div class="slider-advantages-wrapper swiper-wrapper">
           <div class="slider-advantages-slide swiper-slide">
             <img src="./img/bg-slide-1.png" />
+            <div class="slider-advantages__info slider-info">
+              <p class="slider-info__title">
+                Индивидуальный подход к каждому клиенту
+              </p>
+              <p class="slider-info__subtitle">
+                Персональный менеджер и сопровождение 24/7
+              </p>
+
+              <button type="button" class="slider-info__button button">
+                Заказать поставку
+              </button>
+            </div>
           </div>
           <div class="slider-advantages-slide swiper-slide">
             <img src="./img/bg-slide-2.png" />
+            <div class="slider-advantages__info slider-info">
+              <p class="slider-info__title">
+                Большие объемы прoизводимой продукции
+              </p>
+              <p class="slider-info__subtitle">
+                700 тонн - производимая способность комбината “Володарский”
+              </p>
+
+              <button type="button" class="slider-info__button button">
+                Заказать поставку
+              </button>
+            </div>
           </div>
           <div class="slider-advantages-slide swiper-slide">
             <img src="./img/bg-slide-2.png" />
+            <div class="slider-advantages__info slider-info">
+              <p class="slider-info__title">
+                Большие объемы прoизводимой продукции
+              </p>
+              <p class="slider-info__subtitle">
+                700 тонн - производимая способность комбината “Володарский”
+              </p>
+
+              <button type="button" class="slider-info__button button">
+                Заказать поставку
+              </button>
+            </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
       </div>
+
+      <section class="about-us">
+        <div class="about-us__video">
+          <div class="about-us__play">
+            <button>
+              <svg
+                width="70"
+                height="70"
+                viewBox="0 0 70 70"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="35" cy="35" r="35" fill="#FD9F32" />
+                <path d="M47 35L29 45.3923L29 24.6077L47 35Z" fill="white" />
+              </svg>
+            </button>
+          </div>
+          <video
+            loop
+            muted
+            controls
+            poster="./img/poster-video-about.png"
+            width="352"
+            height="200"
+          >
+            <source src="./img/video-about-us.mp4" type="video/mp4" />
+            <source src="./img/video-about-us.webm" type="video/webm" />
+            <source src="./img/video-about-us.ogg" type="video/ogg" />
+          </video>
+        </div>
+
+        <div class="about-us__text">
+          <p class="about-us__title">
+            Крупнейший поставщик муки в Нижегородской области
+          </p>
+          <p class="about-us__description">
+            Мукомольный комбинат Володарский — радует людей вкусным хлебом. В
+            этом нам помогает качественное и экологическое сырье, индивидуальный
+            подход к клиентам и квалифицированные сотрудники, всегда готовые
+            помочь
+          </p>
+        </div>
+
+        <div class="about-us__signature signature">
+          <div class="signature__image">
+            <svg
+              width="53"
+              height="54"
+              viewBox="0 0 53 54"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.89551 16.3037C8.06241 10.9714 9.00661 8.94515 13.368 5.76906C16.1065 3.77475 19.4598 1 23.0524 1C29.2706 1 18.7327 38.4644 17.453 42.5335C16.4518 45.7171 14.4984 54.4833 9.35332 52.7834C4.09426 51.0459 1.54054 45.4029 1.07754 40.2557C-0.0458837 27.7669 11.2216 15.0281 22.9819 12.2464C29.8177 10.6296 29.3222 19.2712 29.0391 23.7776C28.8963 26.0501 27.2894 32.3589 29.3913 27.1942C31.0233 23.184 32.8409 18.2671 35.5189 14.8089C37.9415 11.6805 38.9833 15.9034 39.8152 17.5849C40.307 18.579 50.6746 12.9752 52 12.46"
+                stroke="#50220F"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+
+          <div class="signature__text">
+            <p class="signature__post">Генеральный директор</p>
+            <p class="signature__name">О. А. Дворникова</p>
+          </div>
+        </div>
+
+        <div class="about-us__link-wrapper arrow arrow--down">
+          <a class="about-us__link" href="#">О компании</a>
+        </div>
+      </section>
+
+      <section class="types-of-flour">
+        <div class="types-of-flour__card card">
+          <div class="card__image-wrapper">
+            <img src="./img/semolina.png" />
+          </div>
+          <p class="card__name arrow arrow--down">Манная крупа</p>
+        </div>
+        <div class="types-of-flour__card card">
+          <div class="card__image-wrapper">
+            <img src="./img/wheat-flour.png" />
+          </div>
+          <p class="card__name arrow arrow--down">Пшеничная мука</p>
+        </div>
+        <div class="types-of-flour__card card">
+          <div class="card__image-wrapper">
+            <img src="./img/rye-flour.png" />
+          </div>
+          <p class="card__name arrow arrow--down">Ржаная мука</p>
+        </div>
+        <div class="types-of-flour__card card">
+          <div class="card__image-wrapper">
+            <img src="./img/bran.png" />
+          </div>
+          <p class="card__name arrow arrow--down">Отруби</p>
+        </div>
+        <div class="types-of-flour__card card">
+          <div class="card__image-wrapper">
+            <img src="./img/grain-waste.png" />
+          </div>
+          <p class="card__name arrow arrow--down">Зерноотходы</p>
+        </div>
+      </section>
     </main>
-    <script src="./js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

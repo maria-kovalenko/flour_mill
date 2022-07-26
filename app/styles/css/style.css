@@ -32,12 +32,14 @@ a {
   vertical-align: middle;
   text-align: center;
   font-size: 18px;
+  font-family: Mulish,sans-serif;
   line-height: 120%;
-  font-weight: 800;
+  font-weight: 700;
+  letter-spacing: -1%;
   color: #fff;
   background-color: #fd9f32;
   border: none;
-  border-radius: 16px;
+  border-radius: 6px;
   -webkit-box-shadow: 13px 4px 30px 0 rgba(203,173,149,.45);
   box-shadow: 13px 4px 30px 0 rgba(203,173,149,.45);
   cursor: pointer
@@ -47,6 +49,10 @@ a {
   box-shadow: 13px 4px 30px 0 rgba(203,173,149,.45);
   -webkit-box-shadow: 3px 4px 30px 0 rgba(203,173,149,.8);
   box-shadow: 3px 4px 30px 0 rgba(203,173,149,.8)
+}
+button {
+  border: none;
+  background-color: transparent
 }
 .visually-hidden:not(:focus):not(:active),
 input[type=checkbox].visually-hidden,
@@ -69,7 +75,14 @@ input[type=radio].visually-hidden {
 .products {
   display: none
 }
-.swiper {
+.slider-advantages {
+  position: relative;
   width: 365px;
   height: 481px
+}
+.slider-advantages__info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1
 }

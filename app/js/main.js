@@ -2,17 +2,16 @@
 
 const swiperAdvantages = new Swiper(".slider-advantages", {
   direction: "horizontal",
-  slidesPerView: "auto",
+  slidesPerView: 1,
 
   pagination: {
     el: ".swiper-pagination",
   },
-  //   paginationClickable: true,
+  paginationClickable: true,
 
-  //   effect: "fade",
-  //   fadeEffect: {
-  //     crossFade: true,
-  //   },
+  // effect: "fade",
+  // fadeEffect: {
+  //   crossFade: true,
+  // },
   spaceBetween: 10,
-  freeMode: true,
 });
