@@ -725,7 +725,261 @@
           </div>
         </section>
       </section>
+
+      <section class="request">
+        <div class="request__wrapper">
+          <div class="request__text-wrapper">
+            <div class="request__text">
+              <p class="request__title">Оставьте заявку</p>
+              <p class="request__description">
+                С вами свяжется персональный менеджер, который отрегулирует все
+                вопросы и будет на связи 24/7
+              </p>
+            </div>
+            <div class="request__number number">
+              <p class="number__text">Или позвоните нам:</p>
+              <p class="number__phone">+7 (831) 228-90-80</p>
+            </div>
+          </div>
+
+          <form class="request__form form" action="#" method="post">
+            <div class="form__input-wrapper area-name">
+              <label for="name"></label>
+              <input
+                class="input-text"
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Имя"
+              />
+            </div>
+
+            <div class="form__input-wrapper area-phone">
+              <label for="phone"></label>
+              <input
+                class="input-text"
+                id="phone"
+                type="tel"
+                name="phone"
+                placeholder="Телефон"
+              />
+            </div>
+
+            <div class="form__input-wrapper area-email">
+              <label for="email"></label>
+              <input
+                class="input-text"
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Почта"
+              />
+            </div>
+
+            <textarea
+              class="form__message five area-message"
+              name="text"
+              placeholder="Комментарий"
+            ></textarea>
+
+            <div class="form__input-wrapper area-email">
+              <input
+                class="input-text"
+                id="agree"
+                type="checkbox"
+                name="email"
+              />
+              <label for="agree"
+                >Я согласен с условиями
+                <a class="form__link">политики конфиденциальноcти</a></label
+              >
+            </div>
+
+            <div class="form__button-wrapper">
+              <button class="form__button button" type="submit">
+                <span class="modify-text-btn">Отправить</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__logo-wrapper">
+        <img
+          src="./img/footer-logo.svg"
+          class="page-footer__logo"
+          width="104"
+          height="67"
+          alt="Логотип"
+        />
+      </div>
+
+      <div class="page-footer__contacts footer-contacts">
+        <p class="footer-contacts__number">+7 (831) 228-90-80</p>
+        <p class="footer-contacts__email">nn@wolodar.ru</p>
+      </div>
+
+      <div class="page-footer__social-wrapper">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Телеграм</span>
+                <svg style="display: none">
+                  <symbol id="icon-telegram" viewBox="0 0 32 32">
+                    <g>
+                      <path
+                        d="M16 0C7.16129 0 0 7.16129 0 16C0 24.8387 7.16129 32 16 32C24.8387 32 32 24.8387 32 16C32 7.16129 24.8387 0 16 0ZM23.8581 10.9613L21.2323 23.3355C21.0387 24.2129 20.5161 24.4258 19.7871 24.0129L15.7871 21.0645L13.8581 22.9226C13.6452 23.1355 13.4645 23.3161 13.0516 23.3161L13.3355 19.2452L20.7484 12.5484C21.071 12.2645 20.6774 12.1032 20.2516 12.3871L11.0903 18.1548L7.14193 16.9226C6.28387 16.6516 6.26452 16.0645 7.32258 15.6516L22.7484 9.70323C23.4645 9.44516 24.0903 9.87742 23.8581 10.9613Z"
+                        fill="#B69D86"
+                      />
+                    </g>
+                  </symbol>
+                </svg>
+                <svg width="32" height="32">
+                  <use xlink:href="#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg style="display: none">
+                  <symbol id="icon-vkontakte" viewBox="0 0 32 32">
+                    <g>
+                      <path
+                        d="M16 0C7.16333 0 0 7.16333 0 16C0 24.8367 7.16333 32 16 32C24.8367 32 32 24.8367 32 16C32 7.16333 24.8367 0 16 0ZM22.1533 18.0517C22.1533 18.0517 23.5683 19.4483 23.9167 20.0967C23.9267 20.11 23.9317 20.1233 23.935 20.13C24.0767 20.3683 24.11 20.5533 24.04 20.6917C23.9233 20.9217 23.5233 21.035 23.3867 21.045H20.8867C20.7133 21.045 20.35 21 19.91 20.6967C19.5717 20.46 19.2383 20.0717 18.9133 19.6933C18.4283 19.13 18.0083 18.6433 17.585 18.6433C17.5312 18.6432 17.4778 18.6517 17.4267 18.6683C17.1067 18.7717 16.6967 19.2283 16.6967 20.445C16.6967 20.825 16.3967 21.0433 16.185 21.0433H15.04C14.65 21.0433 12.6183 20.9067 10.8183 19.0083C8.615 16.6833 6.63167 12.02 6.615 11.9767C6.49 11.675 6.74833 11.5133 7.03 11.5133H9.555C9.89167 11.5133 10.0017 11.7183 10.0783 11.9C10.1683 12.1117 10.4983 12.9533 11.04 13.9C11.9183 15.4433 12.4567 16.07 12.8883 16.07C12.9693 16.069 13.0488 16.0485 13.12 16.01C13.6833 15.6967 13.5783 13.6883 13.5533 13.2717C13.5533 13.1933 13.5517 12.3733 13.2633 11.98C13.0567 11.695 12.705 11.5867 12.4917 11.5467C12.578 11.4275 12.6918 11.3309 12.8233 11.265C13.21 11.0717 13.9067 11.0433 14.5983 11.0433H14.9833C15.7333 11.0533 15.9267 11.1017 16.1983 11.17C16.7483 11.3017 16.76 11.6567 16.7117 12.8717C16.6967 13.2167 16.6817 13.6067 16.6817 14.0667C16.6817 14.1667 16.6767 14.2733 16.6767 14.3867C16.66 15.005 16.64 15.7067 17.0767 15.995C17.1336 16.0307 17.1994 16.0498 17.2667 16.05C17.4183 16.05 17.875 16.05 19.1117 13.9283C19.4931 13.2454 19.8245 12.5358 20.1033 11.805C20.1283 11.7617 20.2017 11.6283 20.2883 11.5767C20.3523 11.5441 20.4232 11.5275 20.495 11.5283H23.4633C23.7867 11.5283 24.0083 11.5767 24.05 11.7017C24.1233 11.9 24.0367 12.505 22.6817 14.34L22.0767 15.1383C20.8483 16.7483 20.8483 16.83 22.1533 18.0517Z"
+                        fill="#B69D86"
+                      />
+                    </g>
+                  </symbol>
+                </svg>
+                <svg width="32" height="32">
+                  <use xlink:href="#icon-vkontakte"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+                <svg style="display: none">
+                  <symbol id="icon-instagram" viewBox="0 0 32 32">
+                    <g>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM12.8851 16C12.8851 14.2862 14.2837 12.8876 15.9975 12.8876C17.7113 12.8876 19.1099 14.2862 19.1099 16C19.1099 17.7138 17.7113 19.1124 15.9975 19.1124C14.2837 19.1124 12.8851 17.7138 12.8851 16ZM25.3326 15.5285C25.3325 15.6855 25.3323 15.8427 25.3323 16C25.3323 16.1759 25.3326 16.3516 25.3328 16.5272C25.3345 17.6377 25.3361 18.7417 25.2716 19.8526C25.1992 21.3469 24.8606 22.6708 23.7656 23.7659C22.6729 24.8587 21.3467 25.1995 19.8524 25.2719C18.7229 25.3355 17.6006 25.3342 16.4712 25.333C16.3142 25.3328 16.1571 25.3326 15.9998 25.3326C15.8428 25.3326 15.686 25.3328 15.5293 25.333C14.4015 25.3342 13.2789 25.3355 12.1473 25.2719C10.653 25.1995 9.32911 24.861 8.23406 23.7659C7.14134 22.6732 6.80045 21.3469 6.72807 19.8526C6.66452 18.723 6.66576 17.5989 6.66701 16.4706C6.66719 16.3138 6.66736 16.157 6.66736 16C6.66736 15.843 6.66719 15.6861 6.66701 15.5294C6.66576 14.4016 6.66452 13.279 6.72807 12.1474C6.80045 10.6531 7.139 9.32916 8.23406 8.23409C9.32678 7.14135 10.653 6.80045 12.1473 6.72807C13.2768 6.66452 14.3991 6.66576 15.5284 6.66701C15.6854 6.66719 15.8425 6.66736 15.9998 6.66736C16.1568 6.66736 16.3137 6.66719 16.4704 6.66701C17.5982 6.66576 18.7208 6.66452 19.8524 6.72807C21.3467 6.80045 22.6705 7.13901 23.7656 8.23409C24.8583 9.32682 25.1992 10.6531 25.2716 12.1474C25.3351 13.2769 25.3339 14.3992 25.3326 15.5285ZM11.2087 16C11.2087 18.6501 13.3474 20.7889 15.9975 20.7889C18.6476 20.7889 20.7863 18.6501 20.7863 16C20.7863 13.3499 18.6476 11.2111 15.9975 11.2111C13.3474 11.2111 11.2087 13.3499 11.2087 16ZM19.864 11.015C19.864 11.6337 20.3637 12.1334 20.9824 12.1334C21.1294 12.1336 21.2749 12.1048 21.4106 12.0486C21.5464 11.9925 21.6698 11.9101 21.7737 11.8062C21.8776 11.7023 21.9599 11.579 22.0161 11.4432C22.0722 11.3074 22.101 11.1619 22.1008 11.015C22.1008 10.3962 21.6012 9.89654 20.9824 9.89654C20.3637 9.89654 19.864 10.3962 19.864 11.015Z"
+                        fill="#B69D86"
+                      />
+                    </g>
+                  </symbol>
+                </svg>
+                <svg width="32" height="32">
+                  <use xlink:href="#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Vch</span>
+                <svg style="display: none">
+                  <symbol id="icon-Vch" viewBox="0 0 32 32">
+                    <g>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM7.11133 15.9187C7.11133 18.1339 8.31844 20.1579 10.1842 21.4983C10.3487 21.6076 10.4304 21.7712 10.4304 21.9899C10.4304 22.0174 10.4238 22.0516 10.4171 22.0859C10.4104 22.1201 10.4038 22.1543 10.4038 22.1819C10.266 22.7285 10.0189 23.6316 9.99222 23.6583C9.98687 23.6738 9.98159 23.6884 9.97654 23.7023C9.95469 23.7623 9.93711 23.8107 9.93711 23.8779C9.93804 23.9576 9.97023 24.0337 10.0268 24.0899C10.0833 24.1461 10.1596 24.1778 10.2393 24.1783C10.2976 24.1725 10.3538 24.1536 10.4038 24.1232L12.3513 23.0023C12.4891 22.9196 12.6536 22.8663 12.818 22.8663C12.8998 22.8663 13.01 22.8663 13.0918 22.893C14.0361 23.1706 15.0159 23.3086 16.0002 23.3027C20.9113 23.3027 24.8891 19.9934 24.8891 15.9187C24.8891 11.8432 20.9113 8.53385 16.0002 8.53385C11.0891 8.53385 7.11133 11.8432 7.11133 15.9187ZM14.1798 13.5347C14.1798 14.1721 13.6749 14.677 13.0375 14.677C12.3993 14.677 11.8953 14.1721 11.8953 13.5347C11.8953 12.8965 12.3993 12.3916 13.0375 12.3916C13.6749 12.3916 14.1798 12.8965 14.1798 13.5347ZM20.1051 13.5347C20.1051 14.1721 19.6011 14.677 18.9629 14.677C18.3256 14.677 17.8207 14.1721 17.8207 13.5347C17.8207 12.8965 18.3256 12.3916 18.9629 12.3916C19.6011 12.3916 20.1051 12.8965 20.1051 13.5347Z"
+                        fill="#B69D86"
+                      />
+                    </g>
+                  </symbol>
+                </svg>
+                <svg width="32" height="32">
+                  <use xlink:href="#icon-Vch"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Ютуб</span>
+                <svg style="display: none">
+                  <symbol id="icon-youtube" viewBox="0 0 32 32">
+                    <g>
+                      <path
+                        d="M18.6717 15.7217L14.9283 13.975C14.6017 13.8233 14.3333 13.9933 14.3333 14.355V17.645C14.3333 18.0067 14.6017 18.1767 14.9283 18.025L18.67 16.2783C18.9983 16.125 18.9983 15.875 18.6717 15.7217ZM16 0C7.16333 0 0 7.16333 0 16C0 24.8367 7.16333 32 16 32C24.8367 32 32 24.8367 32 16C32 7.16333 24.8367 0 16 0ZM16 22.5C7.81 22.5 7.66667 21.7617 7.66667 16C7.66667 10.2383 7.81 9.5 16 9.5C24.19 9.5 24.3333 10.2383 24.3333 16C24.3333 21.7617 24.19 22.5 16 22.5Z"
+                        fill="#B69D86"
+                      />
+                    </g>
+                  </symbol>
+                </svg>
+                <svg width="32" height="32">
+                  <use xlink:href="#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__link-wrapper arrow arrow--down">
+          <a href="#" class="page-footer__link">Магазин на Aliexpress</a>
+        </div>
+      </div>
+      <nav class="footer__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item first arrow arrow--down">
+            <a href="#" class="hover-link">Продукция</a>
+          </li>
+
+          <li class="navigation__item first arrow arrow--down">
+            <a href="#" class="hover-link">О компании</a>
+            <ul class="sub-navigation menu-level-1">
+              <div class="menu-paragraph">
+                <li class="sub-navigation__item first">
+                  <a href="#" class="hover-link">История</a>
+                </li>
+
+                <li class="sub-navigation__item first">
+                  <a href="#" class="hover-link">Документы</a>
+                </li>
+
+                <li class="sub-navigation__item first">
+                  <a href="#" class="hover-link">Фото-видео</a>
+                </li>
+                <li class="sub-navigation__item first">
+                  <a href="#" class="hover-link">Вакансии</a>
+                </li>
+                <li class="sub-navigation__item first">
+                  <a href="#" class="hover-link">Новости</a>
+                </li>
+              </div>
+            </ul>
+          </li>
+          <li class="navigation__item first arrow arrow--down">
+            <a href="#" class="hover-link">Клиентам</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="page-footer__bottom footer-bottom">
+        <div class="footer-bottom__adress">
+          <p>606070, Нижегородская область, г. Володарск, улица Южная, 19 А</p>
+        </div>
+
+        <div class="footer-bottom__link-wrapper arrow arrow--down">
+          <a href="#" class="footer-bottom__link"
+            >Политика конфиденциальности</a
+          >
+        </div>
+
+        <div class="footer-bottom__copyrite copyrite">
+          <p class="copyrite__text">Copyright© 2022</p>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
