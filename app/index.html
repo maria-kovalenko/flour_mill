@@ -346,9 +346,9 @@
             width="352"
             height="200"
           >
-            <source src="./img/video-about-us.mp4" type="video/mp4" />
+            <!-- <source src="./img/less-video-about-us.mp4" type="video/mp4" />
             <source src="./img/video-about-us.webm" type="video/webm" />
-            <source src="./img/video-about-us.ogg" type="video/ogg" />
+            <source src="./img/video-about-us.ogg" type="video/ogg" /> -->
           </video>
         </div>
 
@@ -424,6 +424,111 @@
           </div>
           <p class="card__name arrow arrow--down">Зерноотходы</p>
         </div>
+      </section>
+
+      <section class="path">
+        <h1 class="path__title">Путь производства нашей муки</h1>
+        <div class="path__line-wrapper">
+          <picture>
+            <source
+              media="(min-width: 1920px)"
+              srcset="./img/path-line-desktop.svg"
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="./img/path-line-tablet.svg"
+            />
+            <img class="path__line" src="./img/path-line-mobile.svg" />
+          </picture>
+        </div>
+
+        <section class="purchase">
+          <div class="purchase__image-wrapper">
+            <picture>
+              <source
+                media="(min-width: 1920px)"
+                srcset="./img/purchase-desktop.png"
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="./img/purchase-tablet.png"
+              />
+              <img
+                class="purchase__image"
+                src="./img/purchase-mobile.png"
+                width="544"
+                height="366"
+              />
+            </picture>
+          </div>
+
+          <div class="purchase__text-wrapper">
+            <p class="purchase__title">Закупка зерна</p>
+            <p class="purchase__description">
+              Мы закупаем зерно только у агрохолдингов с проверенной репутацией
+            </p>
+
+            <button type="button" class="purchase__button button">
+              Стать вашим поставщиком
+            </button>
+          </div>
+
+          <div class="purchase__tonnage tonnage">
+            <div class="tonnage__video">
+              <video
+                loop
+                autoplay
+                poster="./img/tonnage-image.png"
+                width="413"
+                height="200"
+              >
+                <!-- <source src="./img/less-video-about-us.mp4" type="video/mp4" />
+            <source src="./img/video-about-us.webm" type="video/webm" />
+            <source src="./img/video-about-us.ogg" type="video/ogg" /> -->
+              </video>
+            </div>
+
+            <div class="tonnage__text">
+              <p class="tonnage__title">Около 2 000 тонн</p>
+              <p class="tonnage__description">
+                Приемка зерна автотранспортом в сутки
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="path__line-wrapper">
+          <picture>
+            <source
+              media="(min-width: 1920px)"
+              srcset="./img/tonnage-line-desktop.svg"
+            />
+
+            <img class="path__line" src="./img/path-line-mobile.svg" />
+          </picture>
+        </div>
+
+        <section class="clearing">
+          <div class="clearing__image-wrapper">
+            <picture>
+              <source
+                media="(min-width: 1920px)"
+                srcset="./img/clearing-desctop.png"
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="./img/clearing-tablet.png"
+              />
+              <img class="clearing__image" src="./img/clearing-mobile.png" />
+            </picture>
+          </div>
+
+          <div class="clearing__text-wrapper">
+            <p class="clearing__title">Очистка зерна</p>
+            <p class="clearing__description">
+              Мы исследуем каждую партию сырья в собственной лаборатории
+            </p>
+          </div>
+        </section>
       </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
