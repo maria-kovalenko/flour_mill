@@ -266,7 +266,7 @@
     <main class="page-main container">
       <head class="page-main__header">
         <div class="page-main__logo">
-          <img src="./img/mill.svg" width="143" height="183" />
+          <img src="./img/mill.svg" width="143" height="183" alt="Мельница" />
         </div>
         <h1 class="page-main__title">Володарский мукомольный комбинат</h1>
       </head>
@@ -444,26 +444,16 @@
 
         <section class="purchase">
           <div class="purchase__image-wrapper">
-            <picture>
-              <source
-                media="(min-width: 1920px)"
-                srcset="./img/purchase-desktop.png"
-              />
-              <source
-                media="(min-width: 1024px)"
-                srcset="./img/purchase-tablet.png"
-              />
-              <img
-                class="purchase__image"
-                src="./img/purchase-mobile.png"
-                width="544"
-                height="366"
-              />
-            </picture>
+            <img
+              class="purchase__image"
+              src="./img/purchase-image.png"
+              width="544"
+              height="366"
+            />
           </div>
 
           <div class="purchase__text-wrapper">
-            <p class="purchase__title">Закупка зерна</p>
+            <h2 class="purchase__title">Закупка зерна</h2>
             <p class="purchase__description">
               Мы закупаем зерно только у агрохолдингов с проверенной репутацией
             </p>
@@ -489,7 +479,7 @@
             </div>
 
             <div class="tonnage__text">
-              <p class="tonnage__title">Около 2 000 тонн</p>
+              <h2 class="tonnage__title">Около 2 000 тонн</h2>
               <p class="tonnage__description">
                 Приемка зерна автотранспортом в сутки
               </p>
@@ -508,25 +498,230 @@
         </div>
 
         <section class="clearing">
-          <div class="clearing__image-wrapper">
+          <div class="clearing__pop-up pop-up">
+            <p class="pop-up__title">32-35 г</p>
+            <p class="pop-up__description">
+              Вес 1 отборного зерна, из которого мы делаем муку
+            </p>
+          </div>
+          <div class="path__line-wrapper">
             <picture>
               <source
                 media="(min-width: 1920px)"
-                srcset="./img/clearing-desctop.png"
+                srcset="./img/popup-line-desktop.svg"
               />
               <source
                 media="(min-width: 1024px)"
-                srcset="./img/clearing-tablet.png"
+                srcset="./img/popup-line-tablet.svg"
               />
-              <img class="clearing__image" src="./img/clearing-mobile.png" />
+              <img class="path__line" src="./img/popup-line-tablet.svg" />
             </picture>
+          </div>
+          <div class="clearing__image-wrapper">
+            <img
+              class="clearing__image"
+              src="./img/clearing-image.png"
+              width="273"
+              height="248"
+              alt="Очитска зерна"
+            />
           </div>
 
           <div class="clearing__text-wrapper">
-            <p class="clearing__title">Очистка зерна</p>
+            <h2 class="clearing__title">Очистка зерна</h2>
             <p class="clearing__description">
               Мы исследуем каждую партию сырья в собственной лаборатории
             </p>
+          </div>
+
+          <div class="clearing__advantages advantages">
+            <ul class="advantages__list">
+              <li class="advantages__item advantages__item--weight">
+                <h3 class="advantages__title">Отсев по весу</h3>
+                <p class="advantages__description">
+                  Наша современая техника позволет успешно очищать зерно от всех
+                  примесей
+                </p>
+              </li>
+              <li class="advantages__item advantages__item--sorting">
+                <h3 class="advantages__title">Оптическая сортировка</h3>
+                <p class="advantages__description">
+                  С помощтю инфракрасного спектра мы анализируем сырье на
+                  наличие заражённости и различных дефектов
+                </p>
+              </li>
+              <li class="advantages__item advantages__item--shape-and-size">
+                <h3 class="advantages__title">Сортировка по форме и размеру</h3>
+                <p class="advantages__description">
+                  Крупные зерна с гладкой здоровой фактурой идут на производство
+                  муки высших сортов, мелкие — диетических с повышенным
+                  содержанием пищевых волокон
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div class="path__line-wrapper">
+          <picture>
+            <source
+              media="(min-width: 1920px)"
+              srcset="./img/advantages-line-desktop.svg"
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="./img/advantages-line-tablet.svg"
+            />
+            <img class="path__line" src="./img/path-line-mobile.svg" />
+          </picture>
+        </div>
+
+        <section class="production">
+          <div class="production__text">
+            <h2 class="production__title">Три производственные линии</h2>
+            <p class="production__description">
+              Наконец, подготовленные виды зерна отправляются в размольное
+              отделение, где cначала дробятся в крупку, а потом измельчаются в
+              муку
+            </p>
+          </div>
+          <div class="production__image">
+            <img
+              src="./img/production-factory.png"
+              width="413"
+              height="200"
+              alt="Производственные линии"
+            />
+          </div>
+
+          <div class="production__pop-up pop-up">
+            <p class="pop-up__title">700 тонн в сутки</p>
+            <p class="pop-up__description">
+              зерна (в том числе 100 тонн ржи) — производственная способность
+              комбината «Володарский»
+            </p>
+          </div>
+          <div class="path__line-wrapper">
+            <picture>
+              <source
+                media="(min-width: 1920px)"
+                srcset="./img/popup-line-desktop.svg"
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="./img/popup-line-tablet.svg"
+              />
+              <img class="path__line" src="./img/path-line-mobile.svg" />
+            </picture>
+          </div>
+
+          <div class="production__number-of-products number-of-products">
+            <div class="number-of-products__image">
+              <img src="./img/production-bag.png" width="352" height="240" />
+            </div>
+
+            <div class="number-of-products__text-wrapper">
+              <div class="number-of-products__text">
+                <p class="number-of-products__title">+ 30 видов продукции</p>
+                <p class="number-of-products__description">
+                  Может производить комбинат в зависимости от задач и
+                  потребностей заказчика, в том числе муку по индивидуальным
+                  параметрам
+                </p>
+              </div>
+
+              <button type="button" class="number-of-products__button button">
+                Посмотреть продукцию
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <div class="path__line-wrapper">
+          <picture>
+            <source
+              media="(min-width: 1920px)"
+              srcset="./img/production-line-desktop.svg"
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="./img/production-line-tablet.svg"
+            />
+            <img class="path__line" src="./img/path-line-mobile.svg" />
+          </picture>
+        </div>
+
+        <section class="packing">
+          <div class="packing__card-1">
+            <h2 class="packing__title">Фасовка</h2>
+            <p class="packing__description">
+              Произведенную продукцию фасуют и развозят по предприятиям,
+              магазинам и фермам
+            </p>
+          </div>
+
+          <div class="packing__card-2 card-2">
+            <h2 class="packing__title">Бестарная фасовка</h2>
+            <p class="packing__description">Муковоз</p>
+
+            <div class="card-2__image-wrapper">
+              <img
+                src="./img/flour-truck.svg"
+                class="card-2__image"
+                width="351"
+                height="115"
+                alt="Муковоз"
+              />
+            </div>
+          </div>
+
+          <div class="packing__card-3 card-3">
+            <div class="card-3__image-wrapper">
+              <img
+                src="./img/pack.svg"
+                class="card-3__image"
+                width="352"
+                height="247"
+                alt="Упаковка"
+              />
+            </div>
+
+            <div class="card-3__name-wrapper">
+              <p class="card-3__name">Пакет</p>
+              <p class="card-3__name">Биг Бэг</p>
+              <p class="card-3__name">Мешок</p>
+            </div>
+          </div>
+        </section>
+        <div class="path__line-wrapper">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="./img/packing-line-tablet.svg"
+            />
+            <img class="path__line" src="./img/path-line-mobile.svg" />
+          </picture>
+        </div>
+        <section class="shipment">
+          <div class="shipment__wrapper">
+            <h2 class="shipment__title">Поставка</h2>
+            <p class="shipment__description">
+              Поставим муку на ваше производство в любом количестве. 35
+              регионов, 5 районов, 4 страны
+            </p>
+
+            <button type="button" class="shipment__button button">
+              Заказать поставку
+            </button>
+          </div>
+
+          <div class="shipment__map-wrapper">
+            <img
+              src="./img/map.svg"
+              class="shipment__map"
+              width="390"
+              height="350"
+              alt="Карта"
+            />
           </div>
         </section>
       </section>
