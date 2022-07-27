@@ -339,6 +339,7 @@ input[type=radio].visually-hidden {
   width: 164px;
   min-height: 186px;
   background-color: #f4eee5;
+  background: url(../../img/bg-card.png);
   border-radius: 8px;
   text-align: center
 }
@@ -347,6 +348,17 @@ input[type=radio].visually-hidden {
 }
 .types-of-flour__card:nth-child(2n) {
   margin-left: 24px
+}
+.card__image-wrapper {
+  margin-top: -18px
+}
+.card__name-wrapper {
+  padding: 0 13px
+}
+.card__name {
+  margin: 0;
+  font-weight: 700;
+  color: #1c1616
 }
 .products {
   display: none
