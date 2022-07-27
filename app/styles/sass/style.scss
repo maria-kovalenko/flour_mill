@@ -27,7 +27,7 @@ body {
   font-family: "Mulish", sans-serif;
   font-weight: 500;
   color: $bg-darkbrown;
-  background-color: $bg-gray;
+  background-color: #fff;
 }
 
 img {
@@ -440,6 +440,10 @@ input[type="radio"].visually-hidden {
   margin-bottom: 10px;
 }
 
+.purchase {
+  margin-bottom: 10px;
+}
+
 .purchase__image-wrapper {
   margin-bottom: 20px;
 }
@@ -468,6 +472,37 @@ input[type="radio"].visually-hidden {
   margin-bottom: 0;
 }
 
+.tonnage__video {
+  margin-left: -19px;
+  margin-right: -19px;
+margin-bottom: 30px;
+  iframe {
+    width: 100%;
+  }
+}
+
+.tonnage__text {
+  width: 227px;
+  padding-bottom: 63px;
+}
+
+.tonnage__title {
+  margin: 0 0 16px;
+  font-size: 26px;
+  line-height: 110%;
+  font-weight: 700;
+}
+
+.tonnage__description {
+   margin: 0;
+  font-size: 16px;
+  line-height: 130%;
+ 
+}
+
+.clearing__pop-up {
+  display: none;
+}
 .products {
   display: none;
 }

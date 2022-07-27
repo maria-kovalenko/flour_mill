@@ -504,17 +504,15 @@
 
           <div class="purchase__tonnage tonnage">
             <div class="tonnage__video">
-              <video
-                loop
-                autoplay
-                poster="./img/tonnage-image.png"
+              <iframe
                 width="413"
                 height="200"
-              >
-                <!-- <source src="./img/less-video-about-us.mp4" type="video/mp4" />
-            <source src="./img/video-about-us.webm" type="video/webm" />
-            <source src="./img/video-about-us.ogg" type="video/ogg" /> -->
-              </video>
+                src="https://www.youtube.com/embed/5eCAK8I8otM"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
 
             <div class="tonnage__text">
@@ -542,20 +540,22 @@
             <p class="pop-up__description">
               Вес 1 отборного зерна, из которого мы делаем муку
             </p>
+
+            <div class="path__line-wrapper">
+              <picture>
+                <source
+                  media="(min-width: 1920px)"
+                  srcset="./img/popup-line-desktop.svg"
+                />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./img/popup-line-tablet.svg"
+                />
+                <img class="path__line" src="./img/popup-line-tablet.svg" />
+              </picture>
+            </div>
           </div>
-          <div class="path__line-wrapper">
-            <picture>
-              <source
-                media="(min-width: 1920px)"
-                srcset="./img/popup-line-desktop.svg"
-              />
-              <source
-                media="(min-width: 1024px)"
-                srcset="./img/popup-line-tablet.svg"
-              />
-              <img class="path__line" src="./img/popup-line-tablet.svg" />
-            </picture>
-          </div>
+
           <div class="clearing__image-wrapper">
             <img
               class="clearing__image"

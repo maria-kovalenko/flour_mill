@@ -9,7 +9,7 @@ body {
   font-family: Mulish,sans-serif;
   font-weight: 500;
   color: #664b42;
-  background-color: #f7f7f7
+  background-color: #fff
 }
 img {
   max-width: 100%;
@@ -372,6 +372,9 @@ input[type=radio].visually-hidden {
   text-align: center;
   margin-bottom: 10px
 }
+.purchase {
+  margin-bottom: 10px
+}
 .purchase__image-wrapper {
   margin-bottom: 20px
 }
@@ -394,6 +397,32 @@ input[type=radio].visually-hidden {
 }
 .purchase__button {
   margin-bottom: 0
+}
+.tonnage__video {
+  margin-left: -19px;
+  margin-right: -19px;
+  margin-bottom: 30px
+}
+.tonnage__video iframe {
+  width: 100%
+}
+.tonnage__text {
+  width: 227px;
+  padding-bottom: 63px
+}
+.tonnage__title {
+  margin: 0 0 16px;
+  font-size: 26px;
+  line-height: 110%;
+  font-weight: 700
+}
+.tonnage__description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 130%
+}
+.clearing__pop-up {
+  display: none
 }
 .products {
   display: none
