@@ -6,12 +6,13 @@ const swiperAdvantages = new Swiper(".slider-advantages", {
 
   pagination: {
     el: ".swiper-pagination",
+
+    clickable: true,
   },
-  paginationClickable: true,
 
   // effect: "fade",
   // fadeEffect: {
   //   crossFade: true,
   // },
-  spaceBetween: 10,
+  spaceBetween: 19,
 });
