@@ -215,6 +215,7 @@ input[type=radio].visually-hidden {
 }
 .slider-pagination .swiper-pagination {
   top: 60px;
+  height: 30px;
   margin-left: 34px;
   text-align: left
 }
@@ -238,6 +239,9 @@ input[type=radio].visually-hidden {
   left: -11px;
   border: .5px solid #fd9f32;
   border-radius: 100%
+}
+.slider-advantages-slide__image {
+  height: 100%
 }
 .slider-advantages__info {
   position: absolute;
@@ -263,6 +267,23 @@ input[type=radio].visually-hidden {
 }
 .about-us {
   margin-bottom: 70px
+}
+.about-us__video-wrapper {
+  position: relative;
+  margin-bottom: 20px
+}
+.about-us__play {
+  position: absolute;
+  z-index: 1;
+  left: calc(50% - 35px);
+  top: calc(50% - 35px)
+}
+.about-us__video {
+  border-radius: 4px;
+  height: auto
+}
+.about-us__text {
+  margin-bottom: 10px
 }
 .products {
   display: none
