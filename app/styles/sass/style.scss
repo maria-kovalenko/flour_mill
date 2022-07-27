@@ -475,7 +475,7 @@ input[type="radio"].visually-hidden {
 .tonnage__video {
   margin-left: -19px;
   margin-right: -19px;
-margin-bottom: 30px;
+  margin-bottom: 30px;
   iframe {
     width: 100%;
   }
@@ -494,15 +494,138 @@ margin-bottom: 30px;
 }
 
 .tonnage__description {
-   margin: 0;
+  margin: 0;
   font-size: 16px;
   line-height: 130%;
- 
+}
+
+.clearing {
+  margin-bottom: 10px;
 }
 
 .clearing__pop-up {
   display: none;
 }
+
+.clearing__image-wrapper {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.clearing__text-wrapper {
+  width: 275px;
+  margin-bottom: 156px;
+}
+
+.clearing__title {
+  margin: 0 0 16px;
+  font-size: 26px;
+  line-height: 110%;
+  font-weight: 700;
+}
+
+.clearing__description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.advantages__list {
+  text-align: center;
+}
+
+.advantages__item {
+  position: relative;
+  width: 274px;
+  margin: 0 auto;
+  margin-bottom: 156px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--weight::before {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 90px;
+
+    top: -106px;
+    left: calc(50% - 45px);
+
+    background-image: url(../../img/Icon-weight.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  &--sorting::before {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 90px;
+
+    top: -106px;
+    left: calc(50% - 45px);
+
+    background-image: url(../../img/Icon-sorting.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  &--shape-and-size::before {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 90px;
+
+    top: -106px;
+    left: calc(50% - 45px);
+
+    background-image: url(../../img/Icon-shape-and-size.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.advantages__title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.advantages__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 130%;
+}
+
+.production {
+  margin-bottom: 10px;
+}
+
+.production__text {
+  width: 315px;
+  margin-bottom: 30px;
+}
+
+.production__title {
+  margin: 0 0 16px;
+  font-size: 26px;
+  line-height: 110%;
+  font-weight: 700;
+}
+
+.production__description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.production__image {
+  margin: 0 -19px 0;
+  height: 200px;
+}
+
 .products {
   display: none;
 }
