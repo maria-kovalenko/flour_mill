@@ -338,12 +338,76 @@ input[type="radio"].visually-hidden {
   height: auto;
 }
 
-.about-us__text {
-  margin-bottom: 10px;
+.about-us__title {
+  margin: 0 0 10px;
+  font-weight: 700;
+  color: #50220f;
 }
 
-.about-us__title {
-  
+.about-us__description {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 130%;
+  color: #776157;
+}
+
+.about-us__signature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.signature__image {
+  margin-right: 14px;
+}
+
+.signature__text {
+}
+
+.signature__post {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #776157;
+}
+
+.signature__name {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #50220f;
+}
+
+.about-us__link-wrapper {
+  text-align: center;
+}
+
+.about-us__link {
+  color: $bg-orange;
+  font-weight: 700;
+}
+
+.types-of-flour {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.card {
+  width: 164px;
+  min-height: 186px;
+  background-color: $bg-beige;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.types-of-flour__card {
+  margin-bottom: 24px;
+}
+
+.types-of-flour__card:nth-child(2n) {
+  margin-left: 24px;
 }
 
 .products {
