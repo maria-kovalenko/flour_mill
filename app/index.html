@@ -465,95 +465,103 @@
         </div>
       </section>
 
-      <section class="path">
+      <div class="path">
         <h1 class="path__title">Путь производства нашей муки</h1>
         <div class="line-wrapper">
           <img class="line" src="./img/line.svg" />
         </div>
+      </div>
 
-        <section class="purchase">
-          <div class="purchase__image-wrapper">
+      <section class="purchase">
+        <div class="purchase__image-wrapper">
+          <picture>
+            <source
+              media="(min-width: 1920px)"
+              srcset="./img/purchase-image-desktop.png"
+              width="1247"
+              height="744"
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="./img/purchase-image-tablet.png"
+              width="844"
+              height="624"
+            />
+            <img
+              class="purchase__image"
+              src="./img/purchase-image.png"
+              width="544"
+              height="366"
+            />
+          </picture>
+        </div>
+
+        <div class="purchase__text-wrapper">
+          <h2 class="purchase__title">Закупка зерна</h2>
+          <p class="purchase__description">
+            Мы закупаем зерно только у агрохолдингов с проверенной репутацией
+          </p>
+
+          <button type="button" class="purchase__button button">
+            Стать вашим поставщиком
+          </button>
+        </div>
+      </section>
+      <div class="line-wrapper">
+        <img class="line" src="./img/line.svg" />
+      </div>
+
+      <section class="tonnage">
+        <div class="tonnage__video">
+          <iframe
+            width="413"
+            height="200"
+            src="https://www.youtube.com/embed/5eCAK8I8otM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="tonnage__text">
+          <h2 class="tonnage__title">Около 2 000 тонн</h2>
+          <p class="tonnage__description">
+            Приемка зерна автотранспортом в сутки
+          </p>
+        </div>
+      </section>
+
+      <div class="tonnage-line line-wrapper">
+        <picture>
+          <source
+            media="(min-width: 1920px)"
+            srcset="./img/tonnage-line-desktop.svg"
+          />
+          <img class="line" src="./img/line.svg" />
+        </picture>
+      </div>
+
+      <section class="clearing">
+        <div class="clearing__pop-up pop-up">
+          <p class="pop-up__title">32-35 г</p>
+          <p class="pop-up__description">
+            Вес 1 отборного зерна, из которого мы делаем муку
+          </p>
+
+          <div class="clearing__line-wrapper">
             <picture>
               <source
                 media="(min-width: 1920px)"
-                srcset="./img/purchase-image-desktop.png"
-                width="1247"
-                height="744"
+                srcset="./img/popup-line-desktop.svg"
               />
-              <source
-                media="(min-width: 1024px)"
-                srcset="./img/purchase-image-tablet.png"
-                width="844"
-                height="624"
-              />
-              <img
-                class="purchase__image"
-                src="./img/purchase-image.png"
-                width="544"
-                height="366"
-              />
+
+              <img class="clearing__line" src="./img/popup-line-tablet.svg" />
             </picture>
           </div>
-
-          <div class="purchase__text-wrapper">
-            <h2 class="purchase__title">Закупка зерна</h2>
-            <p class="purchase__description">
-              Мы закупаем зерно только у агрохолдингов с проверенной репутацией
-            </p>
-
-            <button type="button" class="purchase__button button">
-              Стать вашим поставщиком
-            </button>
-          </div>
-
-          <div class="line-wrapper">
-            <img class="line" src="./img/line.svg" />
-          </div>
-
-          <div class="purchase__tonnage tonnage">
-            <div class="tonnage__video">
-              <iframe
-                width="413"
-                height="200"
-                src="https://www.youtube.com/embed/5eCAK8I8otM"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-
-            <div class="tonnage__text">
-              <h2 class="tonnage__title">Около 2 000 тонн</h2>
-              <p class="tonnage__description">
-                Приемка зерна автотранспортом в сутки
-              </p>
-            </div>
-          </div>
-        </section>
-        <div class="line-wrapper">
-          <img class="line" src="./img/line.svg" />
         </div>
 
-        <section class="clearing">
-          <div class="clearing__pop-up pop-up">
-            <p class="pop-up__title">32-35 г</p>
-            <p class="pop-up__description">
-              Вес 1 отборного зерна, из которого мы делаем муку
-            </p>
-
-            <div class="clearing__line-wrapper">
-              <picture>
-                <source
-                  media="(min-width: 1920px)"
-                  srcset="./img/popup-line-desktop.svg"
-                />
-
-                <img class="clearing__line" src="./img/popup-line-tablet.svg" />
-              </picture>
-            </div>
-          </div>
-
+        <div class="clearing__wrapper">
           <div class="clearing__image-wrapper">
             <img
               class="clearing__image"
@@ -569,185 +577,193 @@
             <p class="clearing__description">
               Мы исследуем каждую партию сырья в собственной лаборатории
             </p>
+            <div class="line-wrapper">
+              <img class="line" src="./img/line.svg" />
+            </div>
           </div>
+        </div>
 
-          <div class="clearing__advantages advantages">
-            <ul class="advantages__list">
-              <li class="advantages__item advantages__item--weight">
-                <h3 class="advantages__title">Отсев по весу</h3>
-                <p class="advantages__description">
-                  Наша современая техника позволет успешно очищать зерно от всех
-                  примесей
-                </p>
-              </li>
-              <li class="advantages__item advantages__item--sorting">
-                <h3 class="advantages__title">Оптическая сортировка</h3>
-                <p class="advantages__description">
-                  С помощтю инфракрасного спектра мы анализируем сырье на
-                  наличие заражённости и различных дефектов
-                </p>
-              </li>
-              <li class="advantages__item advantages__item--shape-and-size">
-                <h3 class="advantages__title">Сортировка по форме и размеру</h3>
-                <p class="advantages__description">
-                  Крупные зерна с гладкой здоровой фактурой идут на производство
-                  муки высших сортов, мелкие — диетических с повышенным
-                  содержанием пищевых волокон
-                </p>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <div class="advantages__line-wrapper line-wrapper">
+        <div class="clearing__advantages advantages">
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--weight">
+              <h3 class="advantages__title">Отсев по весу</h3>
+              <p class="advantages__description">
+                Наша современая техника позволет успешно очищать зерно от всех
+                примесей
+              </p>
+            </li>
+            <li class="advantages__item advantages__item--sorting">
+              <h3 class="advantages__title">Оптическая сортировка</h3>
+              <p class="advantages__description">
+                С помощтю инфракрасного спектра мы анализируем сырье на наличие
+                заражённости и различных дефектов
+              </p>
+            </li>
+            <li class="advantages__item advantages__item--shape-and-size">
+              <h3 class="advantages__title">Сортировка по форме и размеру</h3>
+              <p class="advantages__description">
+                Крупные зерна с гладкой здоровой фактурой идут на производство
+                муки высших сортов, мелкие — диетических с повышенным
+                содержанием пищевых волокон
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="advantages__line-wrapper line-wrapper">
+        <picture>
+          <source
+            media="(min-width: 1920px)"
+            srcset="./img/advantages-line-desktop.svg"
+          />
+          <source
+            media="(min-width: 1024px)"
+            srcset="./img/advantages-line-tablet.svg"
+          />
+          <img class="advantages__line line" src="./img/line.svg" />
+        </picture>
+      </div>
+
+      <div class="production">
+        <div class="production__text">
+          <h2 class="production__title">Три производственные линии</h2>
+          <p class="production__description">
+            Наконец, подготовленные виды зерна отправляются в размольное
+            отделение, где cначала дробятся в крупку, а потом измельчаются в
+            муку
+          </p>
+        </div>
+        <div class="production__image">
+          <img
+            src="./img/production-factory.png"
+            width="413"
+            height="200"
+            alt="Производственные линии"
+          />
+        </div>
+      </div>
+
+      <div class="ton-pop-up pop-up">
+        <div class="ton-pop-up__line-wrapper line-wrapper">
+          <img
+            class="ton-pop-up__line line"
+            src="./img/production-line-popup.svg"
+          />
+        </div>
+        <p class="pop-up__title">700 тонн в сутки</p>
+        <p class="pop-up__description">
+          зерна (в том числе 100 тонн ржи) — производственная способность
+          комбината «Володарский»
+        </p>
+      </div>
+
+      <div class="product-type">
+        <div class="product-type__image">
           <picture>
             <source
               media="(min-width: 1920px)"
-              srcset="./img/advantages-line-desktop.svg"
+              srcset="./img/product-type-image-desktop.png"
             />
             <source
               media="(min-width: 1024px)"
-              srcset="./img/advantages-line-tablet.svg"
+              srcset="./img/product-type-image-tablet.png"
             />
-            <img class="advantages__line line" src="./img/line.svg" />
+            <img
+              src="./img/product-type-image-mobile.png"
+              width="352"
+              height="240"
+            />
           </picture>
         </div>
 
-        <section class="production">
-          <div class="production__text">
-            <h2 class="production__title">Три производственные линии</h2>
-            <p class="production__description">
-              Наконец, подготовленные виды зерна отправляются в размольное
-              отделение, где cначала дробятся в крупку, а потом измельчаются в
-              муку
+        <div class="product-type__text-wrapper">
+          <div class="product-type__text">
+            <p class="product-type__title">+ 30 видов продукции</p>
+            <p class="product-type__description">
+              Может производить комбинат в зависимости от задач и потребностей
+              заказчика, в том числе муку по индивидуальным параметрам
             </p>
           </div>
-          <div class="production__image">
+
+          <button type="button" class="product-type__button button">
+            Посмотреть продукцию
+          </button>
+        </div>
+      </div>
+
+      <div class="line-wrapper">
+        <img class="line" src="./img/line.svg" />
+      </div>
+
+      <section class="packing">
+        <div class="packing__card-1 card-1">
+          <h2 class="card-1__title">Фасовка</h2>
+          <p class="card-1__description">
+            Произведенную продукцию фасуют и развозят по предприятиям, магазинам
+            и фермам
+          </p>
+        </div>
+
+        <div class="packing__card-2 card-2">
+          <h2 class="card-2__title">Бестарная фасовка</h2>
+          <p class="card-2__description">Муковоз</p>
+
+          <div class="card-2__image-wrapper">
             <img
-              src="./img/production-factory.png"
-              width="413"
-              height="200"
-              alt="Производственные линии"
+              src="./img/flour-truck.svg"
+              class="card-2__image"
+              width="351"
+              height="115"
+              alt="Муковоз"
+            />
+          </div>
+        </div>
+
+        <div class="packing__card-3 card-3">
+          <div class="card-3__image-wrapper">
+            <img
+              src="./img/pack.svg"
+              class="card-3__image"
+              width="352"
+              height="247"
+              alt="Упаковка"
             />
           </div>
 
-          <div class="production__pop-up pop-up">
-            <div class="production__line-wrapper line-wrapper">
-              <img
-                class="production__line line"
-                src="./img/production-line-popup.svg"
-              />
-            </div>
-            <p class="pop-up__title">700 тонн в сутки</p>
-            <p class="pop-up__description">
-              зерна (в том числе 100 тонн ржи) — производственная способность
-              комбината «Володарский»
-            </p>
+          <div class="card-3__name-wrapper">
+            <p class="card-3__name">Пакет</p>
+            <p class="card-3__name card-3-mt">Биг Бэг</p>
+            <p class="card-3__name">Мешок</p>
           </div>
+        </div>
+      </section>
 
-          <div class="production__number-of-products number-of-products">
-            <div class="number-of-products__image">
-              <picture>
-                <source
-                  media="(min-width: 1920px)"
-                  srcset="./img/production-bag-desktop.png"
-                />
-                <source
-                  media="(min-width: 1024px)"
-                  srcset="./img/production-bag-tablet.png"
-                />
-                <img src="./img/production-bag.png" width="352" height="240" />
-              </picture>
-            </div>
+      <div class="line-wrapper">
+        <img class="line" src="./img/line.svg" />
+      </div>
 
-            <div class="number-of-products__text-wrapper">
-              <div class="number-of-products__text">
-                <p class="number-of-products__title">+ 30 видов продукции</p>
-                <p class="number-of-products__description">
-                  Может производить комбинат в зависимости от задач и
-                  потребностей заказчика, в том числе муку по индивидуальным
-                  параметрам
-                </p>
-              </div>
+      <section class="shipment">
+        <div class="shipment__wrapper">
+          <h2 class="shipment__title">Поставка</h2>
+          <p class="shipment__description">
+            Поставим муку на ваше производство в любом количестве. 35 регионов,
+            5 районов, 4 страны
+          </p>
 
-              <button type="button" class="number-of-products__button button">
-                Посмотреть продукцию
-              </button>
-            </div>
-          </div>
-        </section>
-
-        <div class="line-wrapper">
-          <img class="line" src="./img/line.svg" />
+          <button type="button" class="shipment__button button">
+            Заказать поставку
+          </button>
         </div>
 
-        <section class="packing">
-          <div class="packing__card-1">
-            <h2 class="packing__title">Фасовка</h2>
-            <p class="packing__description">
-              Произведенную продукцию фасуют и развозят по предприятиям,
-              магазинам и фермам
-            </p>
-          </div>
-
-          <div class="packing__card-2 card-2">
-            <h2 class="packing__title">Бестарная фасовка</h2>
-            <p class="packing__description">Муковоз</p>
-
-            <div class="card-2__image-wrapper">
-              <img
-                src="./img/flour-truck.svg"
-                class="card-2__image"
-                width="351"
-                height="115"
-                alt="Муковоз"
-              />
-            </div>
-          </div>
-
-          <div class="packing__card-3 card-3">
-            <div class="card-3__image-wrapper">
-              <img
-                src="./img/pack.svg"
-                class="card-3__image"
-                width="352"
-                height="247"
-                alt="Упаковка"
-              />
-            </div>
-
-            <div class="card-3__name-wrapper">
-              <p class="card-3__name">Пакет</p>
-              <p class="card-3__name">Биг Бэг</p>
-              <p class="card-3__name">Мешок</p>
-            </div>
-          </div>
-        </section>
-        <div class="line-wrapper">
-          <img class="line" src="./img/line.svg" />
+        <div class="shipment__map-wrapper">
+          <img
+            src="./img/map.svg"
+            class="shipment__map"
+            width="390"
+            height="350"
+            alt="Карта"
+          />
         </div>
-        <section class="shipment">
-          <div class="shipment__wrapper">
-            <h2 class="shipment__title">Поставка</h2>
-            <p class="shipment__description">
-              Поставим муку на ваше производство в любом количестве. 35
-              регионов, 5 районов, 4 страны
-            </p>
-
-            <button type="button" class="shipment__button button">
-              Заказать поставку
-            </button>
-          </div>
-
-          <div class="shipment__map-wrapper">
-            <img
-              src="./img/map.svg"
-              class="shipment__map"
-              width="390"
-              height="350"
-              alt="Карта"
-            />
-          </div>
-        </section>
       </section>
 
       <section class="request">
@@ -766,65 +782,67 @@
             </div>
           </div>
 
-          <form class="request__form form" action="#" method="post">
-            <div class="form__input-wrapper area-name">
-              <label for="name"></label>
-              <input
-                class="input-text"
-                id="name"
-                type="text"
-                name="name"
-                placeholder="Имя"
-              />
-            </div>
+          <div class="request__form-wrapper">
+            <form class="request__form form" action="#" method="post">
+              <div class="form__input-wrapper area-name">
+                <label for="name"></label>
+                <input
+                  class="input-text"
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Имя"
+                />
+              </div>
 
-            <div class="form__input-wrapper area-phone">
-              <label for="phone"></label>
-              <input
-                class="input-text"
-                id="phone"
-                type="tel"
-                name="phone"
-                placeholder="Телефон"
-              />
-            </div>
+              <div class="form__input-wrapper area-phone">
+                <label for="phone"></label>
+                <input
+                  class="input-text"
+                  id="phone"
+                  type="tel"
+                  name="phone"
+                  placeholder="Телефон"
+                />
+              </div>
 
-            <div class="form__input-wrapper area-email">
-              <label for="email"></label>
-              <input
-                class="input-text"
-                id="email"
-                type="email"
-                name="email"
-                placeholder="Почта"
-              />
-            </div>
+              <div class="form__input-wrapper area-email">
+                <label for="email"></label>
+                <input
+                  class="input-text"
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Почта"
+                />
+              </div>
 
-            <textarea
-              class="form__message five area-message"
-              name="text"
-              placeholder="Комментарий"
-            ></textarea>
+              <textarea
+                class="form__message five area-message"
+                name="text"
+                placeholder="Комментарий"
+              ></textarea>
 
-            <div class="form__input-wrapper area-email">
-              <input
-                class="input-text"
-                id="agree"
-                type="checkbox"
-                name="email"
-              />
-              <label for="agree"
-                >Я согласен с условиями
-                <a class="form__link">политики конфиденциальноcти</a></label
-              >
-            </div>
+              <div class="form__input-wrapper area-email">
+                <input
+                  class="input-text"
+                  id="agree"
+                  type="checkbox"
+                  name="email"
+                />
+                <label for="agree"
+                  >Я согласен с условиями
+                  <a class="form__link">политики конфиденциальноcти</a></label
+                >
+              </div>
 
-            <div class="form__button-wrapper">
-              <button class="form__button button" type="submit">
-                <span class="modify-text-btn">Отправить</span>
-              </button>
-            </div>
-          </form>
+              <div class="form__button-wrapper">
+                <button class="form__button button" type="submit">
+                  <span class="modify-text-btn">Отправить</span>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </main>
