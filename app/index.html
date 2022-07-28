@@ -467,28 +467,32 @@
 
       <section class="path">
         <h1 class="path__title">Путь производства нашей муки</h1>
-        <div class="path__line-wrapper">
-          <picture>
-            <source
-              media="(min-width: 1920px)"
-              srcset="./img/path-line-desktop.svg"
-            />
-            <source
-              media="(min-width: 1024px)"
-              srcset="./img/path-line-tablet.svg"
-            />
-            <img class="path__line" src="./img/path-line-mobile.svg" />
-          </picture>
+        <div class="line-wrapper">
+          <img class="line" src="./img/line.svg" />
         </div>
 
         <section class="purchase">
           <div class="purchase__image-wrapper">
-            <img
-              class="purchase__image"
-              src="./img/purchase-image.png"
-              width="544"
-              height="366"
-            />
+            <picture>
+              <source
+                media="(min-width: 1920px)"
+                srcset="./img/purchase-image-desktop.png"
+                width="1247"
+                height="744"
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="./img/purchase-image-tablet.png"
+                width="844"
+                height="624"
+              />
+              <img
+                class="purchase__image"
+                src="./img/purchase-image.png"
+                width="544"
+                height="366"
+              />
+            </picture>
           </div>
 
           <div class="purchase__text-wrapper">
@@ -500,6 +504,10 @@
             <button type="button" class="purchase__button button">
               Стать вашим поставщиком
             </button>
+          </div>
+
+          <div class="line-wrapper">
+            <img class="line" src="./img/line.svg" />
           </div>
 
           <div class="purchase__tonnage tonnage">
@@ -523,15 +531,8 @@
             </div>
           </div>
         </section>
-        <div class="path__line-wrapper">
-          <picture>
-            <source
-              media="(min-width: 1920px)"
-              srcset="./img/tonnage-line-desktop.svg"
-            />
-
-            <img class="path__line" src="./img/path-line-mobile.svg" />
-          </picture>
+        <div class="line-wrapper">
+          <img class="line" src="./img/line.svg" />
         </div>
 
         <section class="clearing">
@@ -541,17 +542,14 @@
               Вес 1 отборного зерна, из которого мы делаем муку
             </p>
 
-            <div class="path__line-wrapper">
+            <div class="clearing__line-wrapper">
               <picture>
                 <source
                   media="(min-width: 1920px)"
                   srcset="./img/popup-line-desktop.svg"
                 />
-                <source
-                  media="(min-width: 1024px)"
-                  srcset="./img/popup-line-tablet.svg"
-                />
-                <img class="path__line" src="./img/popup-line-tablet.svg" />
+
+                <img class="clearing__line" src="./img/popup-line-tablet.svg" />
               </picture>
             </div>
           </div>
@@ -600,7 +598,7 @@
             </ul>
           </div>
         </section>
-        <div class="path__line-wrapper">
+        <div class="advantages__line-wrapper line-wrapper">
           <picture>
             <source
               media="(min-width: 1920px)"
@@ -610,7 +608,7 @@
               media="(min-width: 1024px)"
               srcset="./img/advantages-line-tablet.svg"
             />
-            <img class="path__line" src="./img/path-line-mobile.svg" />
+            <img class="advantages__line line" src="./img/line.svg" />
           </picture>
         </div>
 
@@ -633,29 +631,32 @@
           </div>
 
           <div class="production__pop-up pop-up">
+            <div class="production__line-wrapper line-wrapper">
+              <img
+                class="production__line line"
+                src="./img/production-line-popup.svg"
+              />
+            </div>
             <p class="pop-up__title">700 тонн в сутки</p>
             <p class="pop-up__description">
               зерна (в том числе 100 тонн ржи) — производственная способность
               комбината «Володарский»
             </p>
           </div>
-          <div class="path__line-wrapper">
-            <picture>
-              <source
-                media="(min-width: 1920px)"
-                srcset="./img/popup-line-desktop.svg"
-              />
-              <source
-                media="(min-width: 1024px)"
-                srcset="./img/popup-line-tablet.svg"
-              />
-              <img class="path__line" src="./img/path-line-mobile.svg" />
-            </picture>
-          </div>
 
           <div class="production__number-of-products number-of-products">
             <div class="number-of-products__image">
-              <img src="./img/production-bag.png" width="352" height="240" />
+              <picture>
+                <source
+                  media="(min-width: 1920px)"
+                  srcset="./img/production-bag-desktop.png"
+                />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./img/production-bag-tablet.png"
+                />
+                <img src="./img/production-bag.png" width="352" height="240" />
+              </picture>
             </div>
 
             <div class="number-of-products__text-wrapper">
@@ -675,18 +676,8 @@
           </div>
         </section>
 
-        <div class="path__line-wrapper">
-          <picture>
-            <source
-              media="(min-width: 1920px)"
-              srcset="./img/production-line-desktop.svg"
-            />
-            <source
-              media="(min-width: 1024px)"
-              srcset="./img/production-line-tablet.svg"
-            />
-            <img class="path__line" src="./img/path-line-mobile.svg" />
-          </picture>
+        <div class="line-wrapper">
+          <img class="line" src="./img/line.svg" />
         </div>
 
         <section class="packing">
@@ -731,14 +722,8 @@
             </div>
           </div>
         </section>
-        <div class="path__line-wrapper">
-          <picture>
-            <source
-              media="(min-width: 1024px)"
-              srcset="./img/packing-line-tablet.svg"
-            />
-            <img class="path__line" src="./img/path-line-mobile.svg" />
-          </picture>
+        <div class="line-wrapper">
+          <img class="line" src="./img/line.svg" />
         </div>
         <section class="shipment">
           <div class="shipment__wrapper">
