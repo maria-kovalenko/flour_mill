@@ -3,7 +3,9 @@
 //   src: url(../../../fonts/Gilroy-Regular.woff),
 //     url(../../../fonts/Gilroy-Regular.woff2);
 // }
-
+* {
+  box-sizing: border-box;
+}
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700;800&display=swap");
 
 $bg-gray: #f7f7f7;
@@ -170,6 +172,10 @@ input[type="radio"].visually-hidden {
 .header__search {
   display: none;
   margin-right: 20px;
+}
+
+.icon-number-product {
+  display: block;
 }
 // -------------------------------- header__navigation ---------------------
 
@@ -677,6 +683,90 @@ input[type="radio"].visually-hidden {
   }
 }
 
-.products {
-  display: none;
+.ton-pop-up {
+  margin-left: auto;
+  margin-top: -69px;
+  margin-bottom: 20px;
+  width: 285px;
+}
+
+.ton-pop-up__line-wrapper {
+  display: inline-block;
+  margin-bottom: 29px;
+  margin-left: 52px;
+}
+
+.ton-pop-up__text-wrapper {
+  margin-left: auto;
+  width: 269px;
+  height: 142px;
+  padding: 25px 12px;
+  position: relative;
+  background-color: #f4eee5;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -6px;
+    left: -10px;
+    width: 285px;
+    height: 157px;
+    background: url(../../img/pattern-full2.svg) no-repeat;
+
+    z-index: -1;
+  }
+}
+
+.pop-up__title {
+  margin: 0 0 8px;
+  font-weight: 700;
+  color: #50220f;
+}
+
+.pop-up__description {
+  margin: 0;
+  font-size: 14px;
+}
+
+.product-type {
+  margin-bottom: 10px;
+}
+
+.product-type__image-wrapper {
+  position: relative;
+  width: 352px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 67px;
+    right: 65px;
+    width: 90px;
+    height: 90px;
+    background: url(../../img/icon-product-type.png) no-repeat;
+
+    background-size: contain;
+  }
+}
+
+.product-type__text {
+  margin-bottom: 50px;
+}
+
+.product-type__title {
+  font-size: 26px;
+  line-height: 110%;
+  font-weight: 700;
+}
+
+.product-type__description {
+  font-size: 15.5px;
+  line-height: 130%;
+}
+
+.product-type__button {
+  min-width: 268px;
 }
