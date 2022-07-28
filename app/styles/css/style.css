@@ -185,6 +185,11 @@ input[type=radio].visually-hidden {
   font-weight: 800;
   margin-right: 8px
 }
+.title {
+  font-size: 26px;
+  line-height: 110%;
+  font-weight: 700
+}
 .page-main__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,9 +210,6 @@ input[type=radio].visually-hidden {
   min-width: 188px
 }
 .page-main__title {
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 110%;
   color: #b69d86
 }
 .page-main__title span {
@@ -391,10 +393,7 @@ input[type=radio].visually-hidden {
 }
 .purchase__title {
   margin: 0;
-  margin-bottom: 16px;
-  font-size: 26px;
-  line-height: 110%;
-  font-weight: 700
+  margin-bottom: 16px
 }
 .purchase__description {
   margin: 0;
@@ -463,10 +462,7 @@ input[type=radio].visually-hidden {
   margin-bottom: 156px
 }
 .clearing__title {
-  margin: 0 0 16px;
-  font-size: 26px;
-  line-height: 110%;
-  font-weight: 700
+  margin: 0 0 16px
 }
 .clearing__description {
   margin: 0;
@@ -558,10 +554,7 @@ input[type=radio].visually-hidden {
   margin-bottom: 30px
 }
 .production__title {
-  margin: 0 0 16px;
-  font-size: 26px;
-  line-height: 110%;
-  font-weight: 700
+  margin: 0 0 16px
 }
 .production__description {
   margin: 0;
@@ -634,11 +627,6 @@ input[type=radio].visually-hidden {
 }
 .product-type__text {
   margin-bottom: 50px
-}
-.product-type__title {
-  font-size: 26px;
-  line-height: 110%;
-  font-weight: 700
 }
 .product-type__description {
   font-size: 15.5px;
