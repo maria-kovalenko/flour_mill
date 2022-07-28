@@ -513,7 +513,7 @@
 
       <section class="tonnage">
         <div class="tonnage__video">
-          <iframe
+          <!-- <iframe
             width="413"
             height="200"
             src="https://www.youtube.com/embed/5eCAK8I8otM"
@@ -521,10 +521,16 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-          ></iframe>
+          ></iframe> -->
+
+          <video class="tonnage-video" autoplay loop width="413" height="200">
+            <source src="./img/compressed-mp4.mp4" type="video/mp4" />
+            <!-- <source src="./img/video-about-us.webm" type="video/webm" />
+            <source src="./img/video-about-us.ogg" type="video/ogg" /> -->
+          </video>
         </div>
 
-        <div class="tonnage__text">
+        <div class="tonnage__text container">
           <h2 class="tonnage__title">Около 2 000 тонн</h2>
           <p class="tonnage__description">
             Приемка зерна автотранспортом в сутки
@@ -577,7 +583,7 @@
             <p class="clearing__description">
               Мы исследуем каждую партию сырья в собственной лаборатории
             </p>
-            <div class="line-wrapper">
+            <div class="clearing__line-wrapper line-wrapper">
               <img class="line" src="./img/line.svg" />
             </div>
           </div>
@@ -625,7 +631,7 @@
       </div>
 
       <div class="production">
-        <div class="production__text">
+        <div class="production__text container">
           <h2 class="production__title">Три производственные линии</h2>
           <p class="production__description">
             Наконец, подготовленные виды зерна отправляются в размольное

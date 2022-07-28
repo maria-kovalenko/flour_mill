@@ -472,12 +472,39 @@ input[type="radio"].visually-hidden {
   margin-bottom: 0;
 }
 
-.tonnage__video {
+.tonnage {
+  position: relative;
   margin-left: -19px;
   margin-right: -19px;
-  margin-bottom: 30px;
-  iframe {
+  margin-bottom: 10px;
+  background-color: $bg-gray;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: -19px;
     width: 100%;
+    height: 23px;
+    background: url(../../img/pattern-top.png) no-repeat;
+
+    z-index: 1;
+  }
+}
+
+.tonnage__video {
+  max-height: 200px;
+  margin-bottom: 30px;
+  // iframe {
+  //   width: 100%;
+  // }
+
+  video {
+    object-fit: cover;
+
+    top: 0;
+    left: 0;
+    z-index: 1;
   }
 }
 
@@ -528,6 +555,10 @@ input[type="radio"].visually-hidden {
   margin: 0;
   font-size: 16px;
   line-height: 130%;
+}
+
+.clearing__line-wrapper {
+  display: none;
 }
 
 .advantages__list {
@@ -600,11 +631,28 @@ input[type="radio"].visually-hidden {
 }
 
 .production {
+  position: relative;
+  margin-left: -19px;
+  margin-right: -19px;
   margin-bottom: 10px;
+  background-color: $bg-gray;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0px;
+
+    width: 100%;
+    height: 23px;
+    background: url(../../img/pattern-top.png) no-repeat;
+    transform: rotate(-180deg);
+    z-index: 1;
+  }
 }
 
 .production__text {
   width: 315px;
+  padding-top: 35px;
   margin-bottom: 30px;
 }
 
@@ -622,23 +670,10 @@ input[type="radio"].visually-hidden {
 }
 
 .production__image {
-  margin: 0 -19px 0;
   height: 200px;
 
   img {
-    position: relative;
     max-height: 100%;
-
-    &::before {
-      position: absolute;
-      content: "";
-      bottom: 0;
-      left: -11px;
-      width: 100%;
-      height: 23px;
-      background: url(../../img/pattern-top.png) no-repeat;
-      transform: rotate(-180deg);
-    }
   }
 }
 
