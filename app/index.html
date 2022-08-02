@@ -707,7 +707,7 @@
       </div>
 
       <section class="packing">
-        <div class="packing__card-1 card-1">
+        <div class="packing__card card-1">
           <h2 class="card-1__title title">Фасовка</h2>
           <p class="card-1__description">
             Произведенную продукцию фасуют и развозят по предприятиям, магазинам
@@ -715,7 +715,7 @@
           </p>
         </div>
 
-        <div class="packing__card-2 card-2">
+        <div class="packing__card card-2">
           <h2 class="card-2__title">Бестарная фасовка</h2>
           <p class="card-2__description">Муковоз</p>
 
@@ -730,7 +730,9 @@
           </div>
         </div>
 
-        <div class="packing__card-3 card-3">
+        <div class="packing__card card-3">
+          <h2 class="card-3__title">Варианты упаковки</h2>
+
           <div class="card-3__image-wrapper">
             <img
               src="./img/pack.svg"
@@ -755,11 +757,13 @@
 
       <section class="shipment">
         <div class="shipment__wrapper">
-          <h2 class="shipment__title title">Поставка</h2>
-          <p class="shipment__description">
-            Поставим муку на ваше производство в любом количестве. 35 регионов,
-            5 районов, 4 страны
-          </p>
+          <div class="shipment__text">
+            <h2 class="shipment__title title">Поставка</h2>
+            <p class="shipment__description">
+              Поставим муку на ваше производство в любом количестве. 35
+              регионов, 5 районов, 4 страны
+            </p>
+          </div>
 
           <button type="button" class="shipment__button button">
             Заказать поставку
@@ -767,18 +771,27 @@
         </div>
 
         <div class="shipment__map-wrapper">
-          <img
-            src="./img/map.svg"
-            class="shipment__map"
-            width="390"
-            height="350"
-            alt="Карта"
-          />
+          <div class="shipment__map-container container">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="./img/map-desktop.svg"
+            />
+            <source media="(min-width: 768px)" srcset="./img/map-tablet.svg" />
+            <img
+              src="./img/map.svg"
+              class="shipment__map"
+              width="390"
+              height="350"
+              alt="Карта"
+            />
+          </picture>
+        </div>
         </div>
       </section>
 
       <section class="request">
-        <div class="request__wrapper">
+        <div class="request__wrapper container">
           <div class="request__text-wrapper">
             <div class="request__text">
               <p class="request__title title">Оставьте заявку</p>
@@ -789,7 +802,7 @@
             </div>
             <div class="request__number number">
               <p class="number__text">Или позвоните нам:</p>
-              <p class="number__phone">+7 (831) 228-90-80</p>
+              <p class="number__phone title">+7 (831) 228-90-80</p>
             </div>
           </div>
 
@@ -829,14 +842,14 @@
               </div>
 
               <textarea
-                class="form__message five area-message"
+                class="form__message input-text five area-message"
                 name="text"
                 placeholder="Комментарий"
               ></textarea>
 
-              <div class="form__input-wrapper area-email">
+              <div class="form__bottom-wrapper area-email">
                 <input
-                  class="input-text"
+                  class="form__checkbox visually-hidden"
                   id="agree"
                   type="checkbox"
                   name="email"
