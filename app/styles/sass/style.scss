@@ -178,6 +178,34 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 // -------------------------------- header__navigation ---------------------
+.navigation__item {
+  position: relative;
+}
+
+.arrow {
+  &::before {
+    display: none;
+    position: absolute;
+    content: "";
+    border: solid $bg-orange;
+    border-width: 0 4px 4px 0;
+    padding: 6px;
+
+    transform: rotate(45deg);
+  }
+}
+.arrow--up.arrow::before {
+  display: inline-block;
+  right: 5px;
+  top: 0;
+  transform: rotate(-135deg);
+}
+.arrow--down.arrow::before {
+  display: inline-block;
+  right: 5px;
+  top: 13px;
+  transform: rotate(45deg);
+}
 
 .header__navigation {
   display: block;
@@ -269,7 +297,11 @@ input[type="radio"].visually-hidden {
 // -------------------------------- header__language ---------------------
 
 .header__language {
-  display: none;
+  display: block;
+}
+
+.language__list {
+  position: relative;
 }
 // -------------------------------- social ---------------------
 
@@ -449,6 +481,7 @@ input[type="radio"].visually-hidden {
 }
 
 .about-us__link-wrapper {
+  position: relative;
   text-align: center;
 }
 
@@ -513,6 +546,7 @@ input[type="radio"].visually-hidden {
 }
 
 .card__name {
+  position: relative;
   margin: 0;
   font-weight: 700;
   color: #1c1616;
@@ -1179,7 +1213,12 @@ input[type="radio"].visually-hidden {
   margin: 0 0 10px;
 }
 
-.footer-bottom__link-wrapper {
+.page-footer__link-top-wrapper {
+  position: relative;
+}
+
+.page-footer__link-bottom-wrapper {
+  position: relative;
   margin-bottom: 10px;
 }
 

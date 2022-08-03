@@ -150,6 +150,36 @@ input[type=radio].visually-hidden {
 .icon-number-product {
   display: block
 }
+.navigation__item {
+  position: relative
+}
+.arrow::before {
+  display: none;
+  position: absolute;
+  content: "";
+  border: solid #fd9f32;
+  border-width: 0 4px 4px 0;
+  padding: 6px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg)
+}
+.arrow--up.arrow::before {
+  display: inline-block;
+  right: 5px;
+  top: 0;
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg)
+}
+.arrow--down.arrow::before {
+  display: inline-block;
+  right: 5px;
+  top: 13px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg)
+}
 .header__navigation {
   display: block;
   margin-top: 8px;
@@ -231,7 +261,10 @@ input[type=radio].visually-hidden {
   background: url(../../img/icon-photo-menu.svg) no-repeat center
 }
 .header__language {
-  display: none
+  display: block
+}
+.language__list {
+  position: relative
 }
 .social {
   margin: 0 auto;
@@ -389,6 +422,7 @@ input[type=radio].visually-hidden {
   margin-bottom: 50px
 }
 .about-us__link-wrapper {
+  position: relative;
   text-align: center
 }
 .about-us__link {
@@ -442,6 +476,7 @@ input[type=radio].visually-hidden {
   padding: 0 13px
 }
 .card__name {
+  position: relative;
   margin: 0;
   font-weight: 700;
   color: #1c1616
@@ -1010,7 +1045,11 @@ input[type=radio].visually-hidden {
 .adress__text {
   margin: 0 0 10px
 }
-.footer-bottom__link-wrapper {
+.page-footer__link-top-wrapper {
+  position: relative
+}
+.page-footer__link-bottom-wrapper {
+  position: relative;
   margin-bottom: 10px
 }
 .footer-bottom__link {
