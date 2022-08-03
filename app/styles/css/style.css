@@ -272,7 +272,7 @@ input[type=radio].visually-hidden {
   background-size: contain
 }
 .header__language {
-  display: none
+  display: block
 }
 .language__list {
   position: relative
@@ -478,6 +478,9 @@ input[type=radio].visually-hidden {
 .types-of-flour__card {
   margin-bottom: 24px
 }
+.types-of-flour__card:last-child {
+  margin-bottom: 0
+}
 .types-of-flour__card:nth-child(2n) {
   margin-left: 24px
 }
@@ -492,6 +495,11 @@ input[type=radio].visually-hidden {
   margin: 0;
   font-weight: 700;
   color: #1c1616
+}
+.card__name.icon-arrow-right::after {
+  width: 45px;
+  height: 18px;
+  background: url(../../img/arrow-flour-card.svg) no-repeat center
 }
 .path__title {
   font-size: 36px;
@@ -1062,6 +1070,9 @@ input[type=radio].visually-hidden {
 }
 .page-footer__link {
   position: relative
+}
+.page-footer__link.icon-arrow-right::after {
+  background: url(../../img/arrow-brown-link.svg) no-repeat center
 }
 .page-footer__link-bottom-wrapper {
   position: relative;
