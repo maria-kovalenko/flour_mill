@@ -158,7 +158,7 @@ input[type=radio].visually-hidden {
   position: absolute;
   content: "";
   border: solid #fd9f32;
-  border-width: 0 4px 4px 0;
+  border-width: 0 3px 3px 0;
   padding: 6px;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -167,7 +167,7 @@ input[type=radio].visually-hidden {
 .arrow--up.arrow::before {
   display: inline-block;
   right: 5px;
-  top: 0;
+  top: 22px;
   -webkit-transform: rotate(-135deg);
   -ms-transform: rotate(-135deg);
   transform: rotate(-135deg)
@@ -200,7 +200,8 @@ input[type=radio].visually-hidden {
   height: 1px;
   background-color: #b69d86
 }
-.hover-link {
+.navigation__link {
+  position: relative;
   font-size: 22px;
   line-height: 120%;
   font-weight: 700
@@ -260,8 +261,18 @@ input[type=radio].visually-hidden {
   height: 32px;
   background: url(../../img/icon-photo-menu.svg) no-repeat center
 }
+.icon-arrow-right::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  right: -23px;
+  top: 4px;
+  background: url(../../img/arrow-link.svg) no-repeat center;
+  background-size: contain
+}
 .header__language {
-  display: block
+  display: none
 }
 .language__list {
   position: relative
@@ -426,6 +437,7 @@ input[type=radio].visually-hidden {
   text-align: center
 }
 .about-us__link {
+  position: relative;
   color: #fd9f32;
   font-weight: 700
 }
@@ -1048,11 +1060,15 @@ input[type=radio].visually-hidden {
 .page-footer__link-top-wrapper {
   position: relative
 }
+.page-footer__link {
+  position: relative
+}
 .page-footer__link-bottom-wrapper {
   position: relative;
   margin-bottom: 10px
 }
 .footer-bottom__link {
+  position: relative;
   font-size: 16px;
   line-height: 130%;
   color: #fd9f32
