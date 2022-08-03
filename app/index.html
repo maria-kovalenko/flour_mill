@@ -772,21 +772,24 @@
 
         <div class="shipment__map-wrapper">
           <div class="shipment__map-container container">
-          <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="./img/map-desktop.svg"
-            />
-            <source media="(min-width: 768px)" srcset="./img/map-tablet.svg" />
-            <img
-              src="./img/map.svg"
-              class="shipment__map"
-              width="390"
-              height="350"
-              alt="Карта"
-            />
-          </picture>
-        </div>
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="./img/map-desktop.svg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/map-tablet.svg"
+              />
+              <img
+                src="./img/map.svg"
+                class="shipment__map"
+                width="390"
+                height="350"
+                alt="Карта"
+              />
+            </picture>
+          </div>
         </div>
       </section>
 
@@ -847,7 +850,7 @@
                 placeholder="Комментарий"
               ></textarea>
 
-              <div class="form__bottom-wrapper area-email">
+              <div class="form__bottom-wrapper active area-email">
                 <input
                   class="form__checkbox visually-hidden"
                   id="agree"
@@ -872,6 +875,7 @@
     </main>
 
     <footer class="page-footer">
+      <div class="page-footer__wrapper container">
       <div class="page-footer__logo-wrapper">
         <img
           src="./img/footer-logo.svg"
@@ -1044,6 +1048,7 @@
         <div class="footer-bottom__copyrite copyrite">
           <p class="copyrite__text">Copyright© 2022</p>
         </div>
+      </div>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

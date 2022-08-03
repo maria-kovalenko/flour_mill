@@ -827,7 +827,7 @@ input[type=radio].visually-hidden {
   border: 2px solid #fff;
   border-radius: 4px
 }
-.form__bottom-wrapper::after {
+.active::after {
   position: absolute;
   content: "";
   top: 6px;
@@ -842,4 +842,8 @@ input[type=radio].visually-hidden {
 }
 .form__button {
   width: 100%
+}
+.page-footer {
+  background-color: #f5eae1;
+  background: url(../../img/bg-card.png)
 }

@@ -844,9 +844,6 @@ input[type="radio"].visually-hidden {
 
 // ------------------------shipment ------------------
 
-.shipment {
-}
-
 .shipment__wrapper {
   padding: 0 15px;
   text-align: center;
@@ -871,6 +868,9 @@ input[type="radio"].visually-hidden {
 .shipment__map {
   width: 100%;
 }
+
+// ------------------------request ------------------
+
 
 .request {
   margin: 0 -19px;
@@ -902,6 +902,9 @@ input[type="radio"].visually-hidden {
   margin-bottom: 26px;
 }
 
+// ------------------------number ------------------
+
+
 .number__text {
   margin: 0 0 8px;
 }
@@ -911,6 +914,9 @@ input[type="radio"].visually-hidden {
 
   color: $bg-orange;
 }
+
+// ------------------------form ------------------
+
 
 .form__input-wrapper {
   margin-bottom: 16px;
@@ -957,19 +963,27 @@ input[type="radio"].visually-hidden {
     border: 2px solid #fff;
     border-radius: 4px;
   }
-  &::after {
-    position: absolute;
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  //   top: 6px;
+  //   left: 6px;
+  //   width: 17px;
+  //   height: 17px;
+  //   background: url(../../img/icon-checkbox.svg) no-repeat center;
+  // }
+}
+
+.active::after {
+  position: absolute;
     content: "";
     top: 6px;
     left: 6px;
     width: 17px;
     height: 17px;
     background: url(../../img/icon-checkbox.svg) no-repeat center;
-  }
 }
 
-.form__checkbox {
-}
 
 .form__link {
   color: #fff;
@@ -978,4 +992,11 @@ input[type="radio"].visually-hidden {
 
 .form__button {
   width: 100%;
+}
+
+// ------------------------page-footer ------------------
+
+.page-footer {
+  background-color: #F5EAE1;
+  background: url(../../img/bg-card.png);
 }

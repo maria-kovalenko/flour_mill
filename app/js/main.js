@@ -16,3 +16,9 @@ const swiperAdvantages = new Swiper(".slider-advantages", {
   // },
   spaceBetween: 19,
 });
+
+document
+  .querySelector(".form__bottom-wrapper")
+  .addEventListener("click", function () {
+    this.classList.toggle("active");
+  });
