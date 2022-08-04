@@ -103,17 +103,40 @@ input[type="radio"].visually-hidden {
   margin: 0 19px;
 }
 
+@media (min-width: $tablet-width) {
+  .container {
+    margin: 0 27px;
+  }
+}
+
 .header {
   margin-bottom: 12px;
 }
 
 .header__wrapper {
+  position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: auto;
   padding-top: 30px;
+  &::before {
+    position: absolute;
+    content: "";
+
+    top: 66px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #a4a4a4;
+  }
 }
 
 // -------------------------------- header__toggle ---------------------
+@media (min-width: $tablet-width) {
+  .header__button-menu {
+    display: none;
+  }
+}
+
 .header__toggle {
   position: relative;
   width: 28px;
@@ -166,11 +189,24 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .header__logo {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+}
+
 // -------------------------------- header__icons ---------------------
 
 .header__icons {
   display: flex;
   justify-content: end;
+}
+@media (min-width: $tablet-width) {
+  .header__icons {
+    grid-column: 6/7;
+    grid-row: 1/2;
+  }
 }
 
 .header__search {
@@ -218,6 +254,13 @@ input[type="radio"].visually-hidden {
   margin-top: 8px;
   width: 100%;
   background-color: #fff;
+}
+
+@media (min-width: $tablet-width) {
+  .header__navigation {
+    grid-column: 1/7;
+    grid-row: 2/3;
+  }
 }
 
 .navigation__item {
@@ -319,6 +362,14 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
+@media (min-width: $tablet-width) {
+  .header__language {
+    display: block;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
 .language__list {
   position: relative;
 }
@@ -332,6 +383,18 @@ input[type="radio"].visually-hidden {
 .social__list {
   display: flex;
 }
+.header__social {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  margin-top: 14px;
+  margin-bottom: 18px;
+}
+@media (min-width: $tablet-width) {
+  .header__social {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
 
 .social__item {
   margin-right: 20px;
@@ -340,18 +403,18 @@ input[type="radio"].visually-hidden {
     margin-right: 0;
   }
 }
-// -------------------------------- header__social ---------------------
 
-.header__social {
-  grid-column: 1/4;
-  grid-row: 2/3;
-  margin-top: 14px;
-  margin-bottom: 18px;
-}
 // -------------------------------- contacts ---------------------
 .header__contacts {
   grid-column: 1/4;
   grid-row: 3/4;
+}
+
+@media (min-width: $tablet-width) {
+  .header__contacts {
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
 }
 .contacts {
   margin: 0 auto;
