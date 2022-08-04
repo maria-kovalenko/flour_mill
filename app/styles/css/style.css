@@ -221,6 +221,7 @@ input[type=radio].visually-hidden {
   display: none
 }
 .language {
+  display: none;
   width: 40px;
   min-height: 21px;
   font-size: 16px;
@@ -459,9 +460,7 @@ input[type=radio].visually-hidden {
 }
 @media (min-width:1024px) {
   .header__navigation .sub-navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -527,6 +526,9 @@ input[type=radio].visually-hidden {
   height: 32px;
   background: url(../../img/icon-photo-menu.svg) no-repeat center
 }
+.icon-arrow-right::after {
+  display: none
+}
 @media (min-width:1024px) {
   .header__navigation .sub-navigation__item {
     width: 195px;
@@ -574,7 +576,7 @@ input[type=radio].visually-hidden {
   left: 0;
   bottom: -12px;
   background-color: #fd9f32;
-  z-index: 5
+  z-index: 6
 }
 .title {
   font-size: 26px;
