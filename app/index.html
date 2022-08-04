@@ -291,12 +291,19 @@
     <main class="page-main container">
       <div class="page-main__header">
         <div class="page-main__logo">
-          <img src="./img/mill.svg" width="143" height="183" alt="Мельница" />
+          <img
+            src="./img/mill.svg"
+            class="page-main__logo-img"
+            width="143"
+            height="183"
+            alt="Мельница"
+          />
         </div>
 
         <div class="page-main__title-wrapper">
           <h1 class="page-main__title title">
-            <span>Володарский</span> мукомольный комбинат
+            <span>Володарский</span><br />
+            мукомольный комбинат
           </h1>
         </div>
       </div>
@@ -307,10 +314,23 @@
         </div>
         <div class="slider-advantages-wrapper swiper-wrapper">
           <div class="slider-advantages-slide swiper-slide">
-            <img
+            <picture>
+              <source
+                media="(min-width: 1024px)"
+                srcset="./img/bg-slide-1tablet.png"
+               
+              />
+              <img
+                class="slider-advantages-slide__image"
+                src="./img/bg-slide-1.png"
+              
+            
+              />
+            </picture>
+            <!-- <img
               src="./img/bg-slide-1.png"
               class="slider-advantages-slide__image"
-            />
+            /> -->
             <div class="slider-advantages__info slider-info">
               <p class="slider-info__title">
                 Индивидуальный подход к каждому клиенту
