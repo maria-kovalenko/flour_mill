@@ -20,7 +20,7 @@ $tablet-width: 1024px;
 $desktop-width: 1920px;
 
 body {
-  min-width: 390px;
+  min-width: 375px;
   max-width: 1920px;
   margin: 0 auto;
   padding: 0;
@@ -639,6 +639,7 @@ input[type="radio"].visually-hidden {
 .page-main__header {
   display: flex;
   align-items: center;
+  margin-bottom: -25px;
 }
 
 .page-main__logo {
@@ -682,9 +683,8 @@ input[type="radio"].visually-hidden {
 
 .slider-advantages.swiper {
   position: relative;
-  width: 365px;
+  // width: 365px;
   height: 481px;
-  margin-top: -25px;
   margin-bottom: 30px;
   margin-left: 0;
   margin-right: auto;

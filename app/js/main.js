@@ -15,6 +15,17 @@ const swiperAdvantages = new Swiper(".slider-advantages", {
   //   crossFade: true,
   // },
   spaceBetween: 19,
+  breakpoints: {
+    390: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 1,
+    },
+  },
 });
 
 document
