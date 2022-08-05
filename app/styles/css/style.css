@@ -115,6 +115,10 @@ input[type=radio].visually-hidden {
   background-color: #a4a4a4
 }
 @media (min-width:1024px) {
+  .header__wrapper {
+    -ms-grid-columns: 100px auto 320px auto 100px;
+    grid-template-columns: 100px auto 320px auto 100px
+  }
   .header__wrapper::before {
     top: 70px;
     width: 33%
@@ -124,7 +128,7 @@ input[type=radio].visually-hidden {
     content: "";
     top: 70px;
     right: 0;
-    width: 35%;
+    width: 33%;
     height: 1px;
     background-color: #a4a4a4
   }
@@ -192,7 +196,7 @@ input[type=radio].visually-hidden {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
-    margin: 0 50px
+    width: 100%
   }
 }
 .header__icons {
@@ -282,7 +286,7 @@ input[type=radio].visually-hidden {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    margin: 0;
+    margin: 0 auto;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;

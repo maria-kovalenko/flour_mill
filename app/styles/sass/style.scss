@@ -146,6 +146,7 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $tablet-width) {
   .header__wrapper {
+    grid-template-columns: 100px auto 320px auto 100px;
     &::before {
       top: 70px;
       width: 33%;
@@ -157,7 +158,7 @@ input[type="radio"].visually-hidden {
 
       top: 70px;
       right: 0;
-      width: 35%;
+      width: 33%;
       height: 1px;
       background-color: #a4a4a4;
     }
@@ -229,7 +230,7 @@ input[type="radio"].visually-hidden {
   .header__logo {
     grid-column: 3/4;
     grid-row: 1/2;
-    margin: 0 50px;
+    width: 100%;
   }
 }
 
@@ -317,7 +318,7 @@ input[type="radio"].visually-hidden {
     width: 170px;
 
     justify-content: flex-end;
-    margin: 0;
+    margin: 0 auto;
     grid-column: 2/3;
     grid-row: 1/2;
   }
@@ -689,10 +690,8 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $tablet-width) {
   .slider-advantages {
-
-  height: 364px;
-  
-}
+    height: 364px;
+  }
 }
 
 .slider-pagination .swiper-pagination {
