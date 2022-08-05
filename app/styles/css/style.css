@@ -753,7 +753,8 @@ input[type=radio].visually-hidden {
 }
 .about-us__video {
   border-radius: 4px;
-  height: auto
+  height: 200px;
+  width: 100%
 }
 .about-us__title {
   margin: 0 0 10px;
@@ -811,12 +812,17 @@ input[type=radio].visually-hidden {
   margin-bottom: 100px
 }
 .card {
-  width: 164px;
+  width: 155px;
   min-height: 186px;
   background-color: #f4eee5;
   background: url(../../img/bg-card.png);
   border-radius: 8px;
   text-align: center
+}
+@media (min-width:390px) {
+  .card {
+    width: 164px
+  }
 }
 .types-of-flour__card {
   margin-bottom: 24px
@@ -860,6 +866,7 @@ input[type=radio].visually-hidden {
   margin-bottom: 10px
 }
 .purchase__image-wrapper {
+  margin: 0 -19px 0;
   margin-bottom: 20px
 }
 .purchase__text-wrapper {
@@ -901,6 +908,8 @@ input[type=radio].visually-hidden {
   margin-bottom: 30px
 }
 .tonnage__video video {
+  width: 100%;
+  max-width: 413px;
   -o-object-fit: cover;
   object-fit: cover;
   top: 0;
@@ -1040,7 +1049,7 @@ input[type=radio].visually-hidden {
   height: 200px
 }
 .production__image img {
-  max-height: 100%
+  height: 100%
 }
 .ton-pop-up {
   margin-left: auto;
@@ -1085,7 +1094,7 @@ input[type=radio].visually-hidden {
 }
 .product-type__image-wrapper {
   position: relative;
-  width: 352px;
+  width: 337px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 30px

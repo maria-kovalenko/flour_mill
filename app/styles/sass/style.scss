@@ -742,6 +742,10 @@ input[type="radio"].visually-hidden {
   }
 }
 
+// .slider-advantages-slide-wrapper {
+//   text-align: center;
+// }
+
 .slider-advantages-slide__image {
   height: 100%;
 }
@@ -819,7 +823,8 @@ input[type="radio"].visually-hidden {
 
 .about-us__video {
   border-radius: 4px;
-  height: auto;
+  height: 200px;
+  width: 100%;
 }
 
 .about-us__title {
@@ -882,13 +887,19 @@ input[type="radio"].visually-hidden {
 }
 
 .card {
-  width: 164px;
+  width: 155px;
   min-height: 186px;
   background-color: $bg-beige;
   background: url(../../img/bg-card.png);
 
   border-radius: 8px;
   text-align: center;
+}
+
+@media (min-width: $mobile-width) {
+  .card {
+    width: 164px;
+  }
 }
 
 .types-of-flour__card {
@@ -947,6 +958,7 @@ input[type="radio"].visually-hidden {
 }
 
 .purchase__image-wrapper {
+  margin: 0 -19px 0;
   margin-bottom: 20px;
 }
 
@@ -1001,8 +1013,9 @@ input[type="radio"].visually-hidden {
   // }
 
   video {
+    width: 100%;
+    max-width: 413px;
     object-fit: cover;
-
     top: 0;
     left: 0;
     z-index: 1;
@@ -1174,7 +1187,7 @@ input[type="radio"].visually-hidden {
   height: 200px;
 
   img {
-    max-height: 100%;
+    height: 100%;
   }
 }
 
@@ -1233,7 +1246,8 @@ input[type="radio"].visually-hidden {
 
 .product-type__image-wrapper {
   position: relative;
-  width: 352px;
+  width: 337px;
+  // width: 352px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 30px;
