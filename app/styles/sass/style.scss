@@ -1184,20 +1184,78 @@ input[type="radio"].visually-hidden {
   margin-bottom: 10px;
 }
 
+@media (min-width: $tablet-width) {
+  .path__title {
+    font-size: 44px;
+    padding: 0;
+    margin: 0 0 21px;
+  }
+
+  .path .line-wrapper {
+    display: none;
+  }
+}
+
 // -----------------------purchase------------------
 
 .purchase {
+  position: relative;
   margin-bottom: 10px;
 }
 
 .purchase__image-wrapper {
   margin: 0 -19px 0;
   margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .purchase__image-wrapper {
+    position: relative;
+    margin: 0 auto;
+    text-align: right;
+    width: 966px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .purchase__image-wrapper {
+    margin: 0 auto;
+    text-align: right;
+    width: 1480px;
+  }
+}
+
+.purchase__image {
+  object-fit: cover;
+  width: 544px;
+  height: 366px;
+}
+@media (min-width: $tablet-width) {
+  .purchase__image {
+    width: 844px;
+    height: 624px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .purchase__image {
+    width: 1247px;
+    height: 744px;
+  }
 }
 
 .purchase__text-wrapper {
   width: 298px;
   margin-bottom: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .purchase__text-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
 }
 
 .purchase__title {
