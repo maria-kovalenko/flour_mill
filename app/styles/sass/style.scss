@@ -114,13 +114,25 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $tablet-width) {
   .container {
-    width: 970px;
+    width: 94%;
   }
 }
 
-// @media (min-width: $tablet-width) (max-width: $desktop-width) {
+// @media (min-width: 1366px) {
 //   .container {
-//     margin: 0 27px;
+//     width: 1100px;
+//   }
+// }
+
+@media (min-width: 1920px) {
+  .container {
+    width: 1796px;
+  }
+}
+
+// @media (min-width: 1920px) {
+//   .container {
+//     width: 1796px;
 //   }
 // }
 
@@ -649,6 +661,18 @@ input[type="radio"].visually-hidden {
   margin-bottom: -25px;
 }
 
+@media (min-width: $tablet-width) {
+  .page-main__header {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1580px) {
+  .page-main__header {
+    justify-content: flex-start;
+  }
+}
+
 .page-main__logo {
   margin-right: 14px;
   flex-shrink: 0;
@@ -688,38 +712,38 @@ input[type="radio"].visually-hidden {
 }
 // -------------------------------- slider-advantages ---------------------
 
-@media (min-width: 1580px) {
-  .fff {
-    display: flex;
-  }
-}
-
 .slider-advantages.swiper {
   position: relative;
   height: 481px;
   margin-bottom: 30px;
   margin-left: 0;
   margin-right: auto;
+  flex-shrink: 0;
 }
 
 @media (min-width: $tablet-width) {
   .slider-advantages.swiper {
     height: 364px;
     width: 965px;
-    margin-left: 0;
+    // margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media (min-width: 1580px) {
   .slider-advantages.swiper {
     flex-shrink: 0;
-    margin-right: 69px;
+    margin-right: 50px;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 }
 @media (min-width: $desktop-width) {
   .slider-advantages.swiper {
     width: 1172px;
     height: 481px;
+    margin-right: 69px;
   }
 }
 
@@ -820,16 +844,33 @@ input[type="radio"].visually-hidden {
 
 // -------------------------------- about-us ---------------------
 
-.about-us {
+.section-top {
   margin-bottom: 70px;
+}
+
+@media (min-width: $tablet-width) {
+  .section-top {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1580px) {
+  .section-top {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.about-us {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  // justify-content: center;
 }
 
 @media (min-width: 768px) {
   .about-us {
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: nowrap;
     align-items: center;
   }
@@ -838,6 +879,8 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1580px) {
   .about-us {
     flex-wrap: wrap;
+    justify-content: flex-start;
+    // margin-top: -94px;
   }
 }
 
@@ -854,9 +897,16 @@ input[type="radio"].visually-hidden {
   }
 }
 
-@media (min-width: 1580px) {
+@media (min-width: 1024px) {
   .about-us__video-wrapper {
-    margin-bottom: 50px;
+    width: 420px;
+    height: 220px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-us__video-wrapper {
+margin-bottom: 30px;
   }
 }
 
@@ -879,19 +929,38 @@ input[type="radio"].visually-hidden {
   }
 }
 
+// @media (min-width: 1366px) and (max-width: 1580px) {
+//   .about-us__text {
+//     width: 585px;
+//   }
+// }
+
+@media (min-width: 1580px) {
+  .about-us__text {
+    width: 485px;
+  }
+}
+
 @media (min-width: 768px) {
   .about-us__text-bottom {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: 1366px) and (max-width: 1579px) {
+  .about-us__text-bottom {
+    justify-content: flex-start;
   }
 }
 
 @media (min-width: 1024px) {
   .about-us__video {
     border-radius: 4px;
-    height: 220px;
-    width: 420px;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -936,12 +1005,25 @@ input[type="radio"].visually-hidden {
     align-items: flex-end;
     flex-shrink: 0;
     margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .about-us__signature {
+    margin-right: 100px;
   }
 }
 
 .about-us__link-wrapper {
   position: relative;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .about-us__link-wrapper {
+    margin-top: 20px;
+  }
 }
 
 .about-us__link {
