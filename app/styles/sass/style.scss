@@ -734,6 +734,7 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1580px) {
   .slider-advantages.swiper {
     flex-shrink: 0;
+
     margin-right: 50px;
     margin-left: 0;
     margin-bottom: 0;
@@ -906,7 +907,7 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 1024px) {
   .about-us__video-wrapper {
-margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1058,7 +1059,21 @@ margin-bottom: 30px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 24px;
   margin-bottom: 100px;
+}
+
+@media (min-width: $tablet-width) {
+  .types-of-flour {
+    margin-bottom: 104px;
+    gap: 30px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .types-of-flour {
+    margin-bottom: 140px;
+    gap: 34px;
+  }
 }
 
 .card {
@@ -1077,24 +1092,55 @@ margin-bottom: 30px;
   }
 }
 
-.types-of-flour__card {
-  margin-bottom: 24px;
-
-  &:last-child {
-    margin-bottom: 0;
+@media (min-width: $tablet-width) {
+  .card {
+    width: 270px;
+    min-height: 240px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .card {
+    width: 332px;
+    min-height: 298px;
   }
 }
 
-.types-of-flour__card:nth-child(2n) {
-  margin-left: 24px;
+.card__image-wrapper {
+  margin-top: -12px;
+  margin-bottom: 15px;
 }
 
-.card__image-wrapper {
-  margin-top: -18px;
+@media (min-width: $tablet-width) {
+  .card__image-wrapper {
+    margin-top: -10px;
+
+    img {
+      width: 214px;
+      height: 187px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card__image-wrapper {
+    margin-top: -30px;
+
+    img {
+      width: 279px;
+      height: 247px;
+    }
+  }
 }
 
 .card__name-wrapper {
+  word-wrap: break-word;
   padding: 0 13px;
+}
+
+@media (min-width: $tablet-width) {
+  .card__name-wrapper {
+    padding: 0 20px 30px;
+  }
 }
 
 .card__name {
@@ -1102,6 +1148,18 @@ margin-bottom: 30px;
   margin: 0;
   font-weight: 700;
   color: #1c1616;
+}
+
+@media (min-width: $tablet-width) {
+  .card__name br {
+    display: none;
+  }
+}
+@media (min-width: $tablet-width) {
+  .card__name {
+    font-size: 26px;
+    line-height: 110%;
+  }
 }
 
 .card__name.icon-arrow-right::after {
