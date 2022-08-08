@@ -535,14 +535,14 @@
         </a>
       </section>
 
-      <div class="path">
-        <h1 class="path__title">Путь производства нашей муки</h1>
-        <div class="line-wrapper">
-          <img class="line" src="./img/line.svg" />
-        </div>
-      </div>
-
       <section class="purchase">
+        <div class="purchase__title-wrapper">
+          <h1 class="purchase__title-head">Путь производства нашей муки</h1>
+          <div class="purchase__line-wrapper line-wrapper">
+            <img class="line" src="./img/line.svg" />
+          </div>
+        </div>
+
         <div class="purchase__wrapper">
           <div class="purchase__image-wrapper">
             <picture>
@@ -579,66 +579,51 @@
             </button>
           </div>
         </div>
-      </section>
 
-      <div class="line-wrapper purchase-line">
-        <img class="line" src="./img/line.svg" />
-      </div>
-
-      <section class="tonnage">
-        <div class="tonnage__video">
-          <!-- <iframe
-            width="413"
-            height="200"
-            src="https://www.youtube.com/embed/5eCAK8I8otM"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe> -->
-
-          <video class="tonnage-video" autoplay loop width="413" height="200">
-            <source src="./img/compressed-mp4.mp4" type="video/mp4" />
-            <!-- <source src="./img/video-about-us.webm" type="video/webm" />
-            <source src="./img/video-about-us.ogg" type="video/ogg" /> -->
-          </video>
-        </div>
-
-        <div class="tonnage__text">
-          <h2 class="tonnage__title title">Около 2 000 тонн</h2>
-          <p class="tonnage__description">
-            Приемка зерна<br />
-            автотранспортом в сутки
-          </p>
-        </div>
-      </section>
-
-      <div class="tonnage-line line-wrapper">
-        <picture>
-          <source
-            media="(min-width: 1920px)"
-            srcset="./img/tonnage-line-desktop.svg"
-          />
+        <div class="line-wrapper purchase-line">
           <img class="line" src="./img/line.svg" />
-        </picture>
-      </div>
+        </div>
+
+        <div class="tonnage">
+          <div class="tonnage__video">
+            <video class="tonnage-video" autoplay loop width="413" height="200">
+              <source src="./img/compressed-mp4.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <div class="tonnage__text">
+            <h2 class="tonnage__title title">Около 2 000 тонн</h2>
+            <p class="tonnage__description">
+              Приемка зерна<br />
+              автотранспортом в сутки
+            </p>
+          </div>
+        </div>
+
+        <div class="tonnage__line-wrapper line-wrapper">
+          <picture>
+            <source
+              media="(min-width: 1920px)"
+              srcset="./img/tonnage-line-desktop.svg"
+            />
+            <img class="line" src="./img/line.svg" />
+          </picture>
+        </div>
+      </section>
 
       <section class="clearing">
         <div class="clearing__pop-up pop-up">
-          <p class="pop-up__title">32-35 г</p>
-          <p class="pop-up__description">
-            Вес 1 отборного зерна, из которого мы делаем муку
-          </p>
-
-          <div class="clearing__line-wrapper">
-            <picture>
-              <source
-                media="(min-width: 1920px)"
-                srcset="./img/popup-line-desktop.svg"
-              />
-
-              <img class="clearing__line" src="./img/popup-line-tablet.svg" />
-            </picture>
+          <!-- <div class="clearing__pop-up-line-wrapper line-wrapper">
+            <img
+              class="clearing__pop-up-line line"
+              src="./img/production-line-popup.svg"
+            />
+          </div> -->
+          <div class="clearing__pop-up-text-wrapper pop-up-text">
+            <p class="pop-up__title">32-35 г</p>
+            <p class="pop-up__description">
+              Вес 1 отборного зерна, из которого мы делаем муку
+            </p>
           </div>
         </div>
 
@@ -691,6 +676,7 @@
           </ul>
         </div>
       </section>
+
       <div class="advantages__line-wrapper line-wrapper">
         <picture>
           <source
@@ -705,7 +691,8 @@
         </picture>
       </div>
 
-      <div class="production">
+      <section class="production">
+        <!-- <div class="production__wrapper"> -->
         <div class="production__text container">
           <h2 class="production__title title">Три производственные линии</h2>
           <p class="production__description">
@@ -722,16 +709,17 @@
             alt="Производственные линии"
           />
         </div>
-      </div>
+        <!-- </div> -->
+      </section>
 
-      <div class="ton-pop-up pop-up">
-        <div class="ton-pop-up__line-wrapper line-wrapper">
+      <div class="production__pop-up pop-up">
+        <div class="production__pop-up-line-wrapper line-wrapper">
           <img
-            class="ton-pop-up__line line"
+            class="production__pop-up-line line"
             src="./img/production-line-popup.svg"
           />
         </div>
-        <div class="ton-pop-up__text-wrapper">
+        <div class="production__pop-up-text-wrapper pop-up-text">
           <p class="pop-up__title">700 тонн в сутки</p>
           <p class="pop-up__description">
             зерна (в том числе 100 тонн ржи) — производственная способность
