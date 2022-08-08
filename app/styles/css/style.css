@@ -599,13 +599,6 @@ input[type=radio].visually-hidden {
   line-height: 110%;
   font-weight: 700
 }
-@media (min-width:1024px) {
-  .title {
-    font-size: 36px;
-    line-height: 100%;
-    font-weight: 800
-  }
-}
 .page-main__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1213,37 +1206,91 @@ input[type=radio].visually-hidden {
 }
 .tonnage {
   position: relative;
-  margin-left: -19px;
-  margin-right: -19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -5.6%;
+  margin-right: -5.6%;
   margin-bottom: 10px;
+  padding-bottom: 63px;
   background-color: #f7f7f7
 }
 .tonnage::before {
   position: absolute;
   content: "";
   top: 0;
-  left: -19px;
-  width: 100%;
+  left: 0;
+  right: 0;
+  min-width: 100%;
   height: 23px;
   background: url(../../img/pattern-top.png) no-repeat;
   z-index: 1
 }
+@media (min-width:768px) {
+  .tonnage {
+    height: 200px;
+    padding-bottom: 0
+  }
+}
+@media (min-width:1024px) {
+  .tonnage {
+    height: 296px
+  }
+}
+@media (min-width:1920px) {
+  .tonnage {
+    height: 450px
+  }
+}
 .tonnage__video {
-  max-height: 200px;
-  margin-bottom: 30px
+  margin-bottom: 30px;
+  width: 100%
 }
 .tonnage__video video {
   width: 100%;
-  max-width: 413px;
   -o-object-fit: cover;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  z-index: 1
+  object-fit: cover
+}
+@media (min-width:768px) {
+  .tonnage__video {
+    margin-bottom: 0;
+    width: 413px
+  }
+}
+@media (min-width:1024px) {
+  .tonnage__video {
+    width: 50%;
+    height: 296px
+  }
+  .tonnage__video video {
+    height: 100%
+  }
+}
+@media (min-width:1920px) {
+  .tonnage__video {
+    height: 450px
+  }
 }
 .tonnage__text {
-  width: 227px;
-  padding-bottom: 63px
+  width: 300px;
+  margin-left: 19px;
+  word-break: break-all
+}
+@media (min-width:768px) {
+  .tonnage__text {
+    width: 40%;
+    margin-left: 30px
+  }
+}
+@media (min-width:1920px) {
+  .tonnage__text {
+    margin-left: 141px
+  }
 }
 .tonnage__title {
   margin: 0 0 16px;
@@ -1255,6 +1302,17 @@ input[type=radio].visually-hidden {
   margin: 0;
   font-size: 16px;
   line-height: 130%
+}
+@media (min-width:1024px) {
+  .tonnage__description {
+    font-size: 18px;
+    line-height: 120%
+  }
+}
+@media (min-width:768px) {
+  .tonnage-line {
+    display: none
+  }
 }
 .clearing {
   margin-bottom: 10px
@@ -1766,4 +1824,11 @@ input[type=radio].visually-hidden {
   font-size: 16px;
   line-height: 130%;
   color: #776157
+}
+@media (min-width:1024px) {
+  .title {
+    font-size: 36px;
+    line-height: 100%;
+    font-weight: 800
+  }
 }
