@@ -543,43 +543,44 @@
       </div>
 
       <section class="purchase">
-        <div class="purchase__image-wrapper">
-          <!-- <div class="purchase__inner-wrapper"> -->
-          <picture>
-            <source
-              media="(min-width: 1920px)"
-              srcset="./img/purchase-image-desktop.png"
-              width="1247"
-              height="744"
-            />
-            <source
-              media="(min-width: 1024px)"
-              srcset="./img/purchase-image-tablet.png"
-              width="844"
-              height="624"
-            />
-            <img
-              class="purchase__image"
-              src="./img/purchase-image.png"
-              width="544"
-              height="366"
-            />
-          </picture>
-        </div>
-        <!-- </div> -->
+        <div class="purchase__wrapper">
+          <div class="purchase__image-wrapper">
+            <picture>
+              <source
+                media="(min-width: 1920px)"
+                srcset="./img/purchase-image-desktop.png"
+                width="1247"
+                height="744"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/purchase-image-tablet.png"
+                width="844"
+                height="624"
+              />
+              <img
+                class="purchase__image"
+                src="./img/purchase-image.png"
+                width="544"
+                height="366"
+              />
+            </picture>
+          </div>
 
-        <div class="purchase__text-wrapper">
-          <h2 class="purchase__title title">Закупка зерна</h2>
-          <p class="purchase__description">
-            Мы закупаем зерно только у агрохолдингов с проверенной репутацией
-          </p>
+          <div class="purchase__text-wrapper">
+            <h2 class="purchase__title title">Закупка зерна</h2>
+            <p class="purchase__description">
+              Мы закупаем зерно только у агрохолдингов с проверенной репутацией
+            </p>
 
-          <button type="button" class="purchase__button button">
-            Стать вашим поставщиком
-          </button>
+            <button type="button" class="purchase__button button">
+              Стать вашим поставщиком
+            </button>
+          </div>
         </div>
       </section>
-      <div class="line-wrapper">
+
+      <div class="line-wrapper purchase-line">
         <img class="line" src="./img/line.svg" />
       </div>
 

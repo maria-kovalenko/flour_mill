@@ -1184,15 +1184,17 @@ input[type="radio"].visually-hidden {
   margin-bottom: 10px;
 }
 
+@media (min-width: 768px) {
+  .path .line-wrapper {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .path__title {
     font-size: 44px;
     padding: 0;
     margin: 0 0 21px;
-  }
-
-  .path .line-wrapper {
-    display: none;
   }
 }
 
@@ -1203,21 +1205,35 @@ input[type="radio"].visually-hidden {
   margin-bottom: 10px;
 }
 
+.purchase__wrapper {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .purchase__wrapper {
+    margin: 0 auto;
+
+    width: 626px;
+  }
+}
+
 .purchase__image-wrapper {
   margin: 0 -19px 0;
   margin-bottom: 20px;
   text-align: center;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: 768px) {
   .purchase__image-wrapper {
-    position: relative;
-    margin: 0 auto;
     text-align: right;
-    width: 966px;
+    margin: 0;
   }
 }
 
+@media (min-width: $tablet-width) {
+  .purchase__image-wrapper {
+    width: 966px;
+  }
+}
 @media (min-width: $desktop-width) {
   .purchase__image-wrapper {
     margin: 0 auto;
@@ -1249,6 +1265,12 @@ input[type="radio"].visually-hidden {
   margin-bottom: 10px;
 }
 
+@media (min-width: 768px) {
+  .purchase__text-wrapper {
+    position: absolute;
+    top: 75px;
+  }
+}
 @media (min-width: $tablet-width) {
   .purchase__text-wrapper {
     position: absolute;
@@ -1272,6 +1294,12 @@ input[type="radio"].visually-hidden {
 
 .purchase__button {
   margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .purchase-line {
+    display: none;
+  }
 }
 
 // -----------------------tonnage------------------
