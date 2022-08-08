@@ -1085,6 +1085,16 @@ input[type=radio].visually-hidden {
   position: relative;
   margin-bottom: 10px
 }
+@media (min-width:768px) {
+  .purchase {
+    margin-bottom: 0
+  }
+}
+@media (min-width:1024px) {
+  .purchase {
+    margin-bottom: 140px
+  }
+}
 .purchase__title-head {
   font-size: 36px;
   line-height: 100%;
@@ -1238,7 +1248,9 @@ input[type=radio].visually-hidden {
 }
 @media (min-width:1024px) {
   .tonnage {
-    height: 296px
+    height: 296px;
+    margin-left: -3.2%;
+    margin-right: -3.2%
   }
 }
 @media (min-width:1920px) {
@@ -1308,7 +1320,7 @@ input[type=radio].visually-hidden {
     line-height: 120%
   }
 }
-@media (min-width:768px) {
+@media (min-width:1024px) {
   .tonnage__line-wrapper {
     display: none
   }
@@ -1330,10 +1342,13 @@ input[type=radio].visually-hidden {
   display: none;
   min-height: 112px
 }
-@media (min-width:768px) {
+@media (min-width:1024px) {
   .clearing__pop-up {
     display: block;
-    margin-left: auto
+    margin-left: auto;
+    position: absolute;
+    top: -85px;
+    right: -200px
   }
 }
 .clearing__pop-up::before {
@@ -1346,12 +1361,58 @@ input[type=radio].visually-hidden {
   background: url(../../img/clearing-popup-line.png) no-repeat;
   z-index: -1
 }
+.clearing__wrapper {
+  margin-bottom: 43px
+}
+@media (min-width:768px) {
+  .clearing__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly
+  }
+}
+@media (min-width:1024px) {
+  .clearing__wrapper {
+    width: 79%;
+    position: relative;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+  }
+}
 .clearing__image-wrapper {
   text-align: center;
   margin-bottom: 20px
 }
-.clearing__text-wrapper {
-  margin-bottom: 156px
+@media (min-width:768px) {
+  .clearing__image-wrapper {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2
+  }
+}
+@media (min-width:1024px) {
+  .clearing__image-wrapper {
+    margin-left: 35px;
+    margin-bottom: 0
+  }
+}
+@media (min-width:1580px) {
+  .clearing__image-wrapper {
+    margin-left: 100px
+  }
+}
+@media (min-width:1024px) {
+  .clearing__image {
+    width: 437px;
+    height: 397px
+  }
 }
 .clearing__title {
   margin: 0 0 16px
@@ -1366,23 +1427,27 @@ input[type=radio].visually-hidden {
   display: none
 }
 .advantages__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  gap: 50px;
   text-align: center
 }
 .advantages__item {
   position: relative;
   width: 274px;
-  margin: 0 auto;
-  margin-bottom: 156px
-}
-.advantages__item:last-child {
-  margin-bottom: 0
+  padding-top: 106px
 }
 .advantages__item--weight::before {
   position: absolute;
   content: "";
   width: 90px;
   height: 90px;
-  top: -106px;
+  top: 0;
   left: calc(50% - 45px);
   background-image: url(../../img/Icon-weight.svg);
   background-repeat: no-repeat;
@@ -1394,7 +1459,7 @@ input[type=radio].visually-hidden {
   content: "";
   width: 90px;
   height: 90px;
-  top: -106px;
+  top: 0;
   left: calc(50% - 45px);
   background-image: url(../../img/Icon-sorting.svg);
   background-repeat: no-repeat;
@@ -1406,21 +1471,38 @@ input[type=radio].visually-hidden {
   content: "";
   width: 90px;
   height: 90px;
-  top: -106px;
+  top: 0;
   left: calc(50% - 45px);
   background-image: url(../../img/Icon-shape-and-size.svg);
   background-repeat: no-repeat;
   background-position: center
+}
+@media (min-width:768px) {
+  .advantages__item {
+    width: 400px
+  }
 }
 .advantages__title {
   font-size: 22px;
   font-weight: 700;
   margin: 0 0 10px
 }
+@media (min-width:1024px) {
+  .advantages__title {
+    font-size: 26px;
+    line-height: 110%
+  }
+}
 .advantages__description {
   margin: 0;
   font-size: 14px;
   line-height: 130%
+}
+@media (min-width:1024px) {
+  .advantages__description {
+    font-size: 18px;
+    line-height: 120%
+  }
 }
 .production {
   position: relative;
