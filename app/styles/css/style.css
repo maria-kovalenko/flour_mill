@@ -1255,7 +1255,17 @@ input[type=radio].visually-hidden {
 }
 @media (min-width:1920px) {
   .tonnage {
+    position: relative;
     height: 450px
+  }
+  .tonnage::after {
+    position: absolute;
+    content: "";
+    bottom: -313px;
+    left: calc(50% - 388px);
+    width: 777px;
+    height: 313px;
+    background: url(../../img/tonnage-line-desktop.svg) no-repeat
   }
 }
 .tonnage__video {
@@ -1381,9 +1391,17 @@ input[type=radio].visually-hidden {
   .clearing__wrapper {
     width: 79%;
     position: relative;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
+  }
+}
+@media (min-width:1920px) {
+  .clearing__wrapper {
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
   }
 }
 .clearing__image-wrapper {
@@ -1405,13 +1423,19 @@ input[type=radio].visually-hidden {
 }
 @media (min-width:1580px) {
   .clearing__image-wrapper {
-    margin-left: 100px
+    margin-left: 156px
   }
 }
 @media (min-width:1024px) {
   .clearing__image {
     width: 437px;
     height: 397px
+  }
+}
+@media (min-width:1920px) {
+  .clearing__image {
+    width: 525px;
+    height: 477px
   }
 }
 .clearing__title {

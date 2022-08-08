@@ -1360,7 +1360,18 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: $desktop-width) {
   .tonnage {
+    position: relative;
     height: 450px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -313px;
+      left: calc(50% - 388px);
+      width: 777px;
+      height: 313px;
+      background: url(../../img/tonnage-line-desktop.svg) no-repeat;
+    }
   }
 }
 
@@ -1499,7 +1510,13 @@ input[type="radio"].visually-hidden {
   .clearing__wrapper {
     width: 79%;
     position: relative;
-    justify-content: space-between;
+    justify-content: flex-end;
+  }
+}
+@media (min-width: $desktop-width) {
+  .clearing__wrapper {
+    width: 100%;
+    justify-content: center;
   }
 }
 
@@ -1521,13 +1538,19 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 1580px) {
   .clearing__image-wrapper {
-    margin-left: 100px;
+    margin-left: 156px;
   }
 }
 @media (min-width: $tablet-width) {
   .clearing__image {
     width: 437px;
     height: 397px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .clearing__image {
+    width: 525px;
+    height: 477px;
   }
 }
 
