@@ -257,7 +257,7 @@ input[type="radio"].visually-hidden {
 
 .header__icons {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 @media (min-width: $tablet-width) {
   .header__icons {
@@ -1362,12 +1362,14 @@ input[type="radio"].visually-hidden {
   .tonnage {
     position: relative;
     height: 450px;
+    margin-left: -3.5%;
+    margin-right: -3.5%;
 
     &::after {
       position: absolute;
       content: "";
       bottom: -313px;
-      left: calc(50% - 388px);
+      left: 459px;
       width: 777px;
       height: 313px;
       background: url(../../img/tonnage-line-desktop.svg) no-repeat;
@@ -1465,7 +1467,19 @@ input[type="radio"].visually-hidden {
 // -----------------------clearing------------------
 
 .clearing {
-  margin-bottom: 10px;
+  margin-bottom: 100px;
+}
+
+@media (min-width: $tablet-width) {
+  .clearing {
+    margin-bottom: 140px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .clearing {
+    width: 1327px;
+    margin: 0 auto;
+  }
 }
 
 .clearing__pop-up {
@@ -1483,6 +1497,12 @@ input[type="radio"].visually-hidden {
     right: -200px;
   }
 }
+@media (min-width: $desktop-width) {
+  .clearing__pop-up {
+    top: 47px;
+    right: -327px;
+  }
+}
 
 .clearing__pop-up::before {
   position: absolute;
@@ -1493,6 +1513,18 @@ input[type="radio"].visually-hidden {
   height: 100%;
   background: url(../../img/clearing-popup-line.png) no-repeat;
   z-index: -1;
+}
+
+@media (min-width: $desktop-width) {
+  .clearing__pop-up::before {
+    position: absolute;
+    content: "";
+    top: 60px;
+
+    left: -139px;
+    width: 150px;
+    transform: rotate(208deg);
+  }
 }
 
 .clearing__wrapper {
@@ -1516,7 +1548,7 @@ input[type="radio"].visually-hidden {
 @media (min-width: $desktop-width) {
   .clearing__wrapper {
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 
@@ -1539,6 +1571,7 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1580px) {
   .clearing__image-wrapper {
     margin-left: 156px;
+    position: relative;
   }
 }
 @media (min-width: $tablet-width) {
@@ -1554,7 +1587,27 @@ input[type="radio"].visually-hidden {
   }
 }
 
-.clearing__title {
+.clearing__text-wrapper {
+  width: 321px;
+  word-wrap: break-word;
+}
+
+@media (min-width: $desktop-width) {
+  .clearing__text-wrapper {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -176px;
+      left: 50%;
+      width: 4px;
+      height: 101px;
+      background: url(../../img/line-desktop.svg) no-repeat;
+    }
+  }
+}
+.clearing__text-wrapper .clearing__title {
   margin: 0 0 16px;
 }
 
@@ -1577,6 +1630,39 @@ input[type="radio"].visually-hidden {
   justify-content: space-around;
   gap: 50px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -158px;
+      left: 50%;
+      width: 152px;
+      height: 148px;
+      background: url(../../img/advantages-line-tablet.svg) no-repeat;
+    }
+  }
+}
+@media (min-width: $desktop-width) {
+  .advantages__list {
+    position: relative;
+    gap: 0;
+    text-align: left;
+    justify-content: space-between;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -260px;
+      left: 163px;
+      width: 776px;
+      height: 260px;
+      background: url(../../img/advantages-line-desktop.svg) no-repeat;
+    }
+  }
 }
 
 .advantages__item {
@@ -1630,6 +1716,20 @@ input[type="radio"].visually-hidden {
 @media (min-width: 768px) {
   .advantages__item {
     width: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &::before {
+      left: 0;
+    }
   }
 }
 
