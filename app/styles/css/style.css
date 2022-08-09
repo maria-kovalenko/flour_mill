@@ -1748,6 +1748,11 @@ input[type=radio].visually-hidden {
     margin-top: 68px
   }
 }
+@media (min-width:1920px) {
+  .production__pop-up {
+    right: 174px
+  }
+}
 .production__pop-up::before {
   position: absolute;
   content: "";
@@ -1804,6 +1809,12 @@ input[type=radio].visually-hidden {
     width: 81%;
     margin: 0;
     margin-left: auto
+  }
+}
+@media (min-width:1024px) {
+  .product-type__image-wrapper {
+    width: 54%;
+    margin: 0 auto
   }
 }
 .product-type__text-wrapper {

@@ -1896,6 +1896,11 @@ input[type="radio"].visually-hidden {
     margin-top: 68px;
   }
 }
+@media (min-width: $desktop-width) {
+  .production__pop-up {
+    right: 174px;
+  }
+}
 
 .production__pop-up::before {
   position: absolute;
@@ -1966,17 +1971,20 @@ input[type="radio"].visually-hidden {
   }
 }
 
-// @media (min-width: $desktop-width) {
-//
-//   }
+@media (min-width: $tablet-width) {
+  .product-type__image-wrapper {
+    width: 54%;
+    margin: 0 auto;
+  }
+}
 
 .product-type__text-wrapper {
   max-width: 446px;
 }
 @media (min-width: $tablet-width) {
- .product-type__text-wrapper {
-  position: absolute;
-}
+  .product-type__text-wrapper {
+    position: absolute;
+  }
 }
 
 .product-type__text {
