@@ -1625,16 +1625,27 @@ input[type="radio"].visually-hidden {
 // -----------------------advantages------------------
 
 .advantages__list {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 50px;
   text-align: center;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -158px;
+    left: calc(50% - 5px);
+    width: 153px;
+    height: 148px;
+    background: url(../../img/line.svg) no-repeat;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .advantages__list {
-    position: relative;
     &::after {
       position: absolute;
       content: "";
@@ -1648,7 +1659,6 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: $desktop-width) {
   .advantages__list {
-    position: relative;
     gap: 0;
     text-align: left;
     justify-content: space-between;
@@ -2033,21 +2043,47 @@ input[type="radio"].visually-hidden {
   min-width: 268px;
 }
 
+@media (min-width: $tablet-width) {
+  .production-line-wrapper {
+    display: none;
+  }
+}
 // ------------------------packing------------------
 
 .packing {
   margin-bottom: 42px;
 }
+.packing__card {
+  width: 352px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .packing__card {
+    width: 970px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .packing__card {
+    width: 1172px;
+  }
+}
 
 // ------------------------packing__card ------------------
 
 .card-1 {
+  width: 330px;
+  margin: 0 auto;
   margin-bottom: 50px;
 }
 
-.packing__card {
-  padding: 0 15px;
-  text-align: center;
+@media (min-width: $tablet-width) {
+  .card-1 {
+    width: 440px;
+  }
 }
 
 .card-1__title {
@@ -2056,6 +2092,13 @@ input[type="radio"].visually-hidden {
 
 .card-1__description {
   margin: 16px 0 0;
+}
+
+@media (min-width: $tablet-width) {
+  .card-1__description {
+    font-size: 18px;
+    line-height: 120%;
+  }
 }
 
 .card-2 {
@@ -2070,15 +2113,76 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
 }
 
+@media (min-width: $tablet-width) {
+  .card-2__title {
+    font-size: 26px;
+    line-height: 110%;
+  }
+}
+
 .card-2__description {
   margin: 7px 0 52px;
 }
+
+@media (min-width: $tablet-width) {
+  .card-2__description {
+    margin: 16px 0 45px;
+    font-weight: 600;
+    font-size: 22px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .card-2__image-wrapper {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .card-3 {
+    width: 483px;
+  }
+  .card-3__image-wrapper {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+@media (min-width: $desktop-width) {
+  .card-3 {
+    width: 612px;
+  }
+
+  .card-3__image-wrapper {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
 .card-3__title {
   margin: 0 0 13px;
 
   font-size: 22px;
   line-height: 120%;
   font-weight: 700;
+}
+
+@media (min-width: $tablet-width) {
+  .card-3__title {
+    margin: 0 0 20px;
+
+    font-size: 26px;
+    line-height: 110%;
+  }
 }
 
 .card-3__name-wrapper {
@@ -2091,10 +2195,24 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
+@media (min-width: $tablet-width) {
+  .card-3__name-wrapper {
+    width: 364px;
+  }
+}
+
 .card-3__name {
   color: #50220f;
   margin: 0;
   align-self: flex-end;
+}
+
+@media (min-width: $tablet-width) {
+  .card-3__name {
+    font-size: 22px;
+    line-height: 120%;
+    font-weight: 600;
+  }
 }
 
 .card-3-mt {
@@ -2102,6 +2220,9 @@ input[type="radio"].visually-hidden {
 }
 
 // ------------------------shipment ------------------
+.shipment {
+  margin-top: 20px;
+}
 
 .shipment__wrapper {
   padding: 0 15px;
