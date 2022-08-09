@@ -845,46 +845,50 @@
 
           <div class="request__form-wrapper">
             <form class="request__form form" action="#" method="post">
-              <div class="form__input-wrapper area-name">
-                <label for="name"></label>
-                <input
-                  class="input-text"
-                  id="name"
-                  type="text"
-                  name="name"
-                  placeholder="Имя"
-                />
+              <div class="form__wrapper">
+                <div class="column-left">
+                  <div class="form__input-wrapper">
+                    <label for="name"></label>
+                    <input
+                      class="input-text"
+                      id="name"
+                      type="text"
+                      name="name"
+                      placeholder="Имя"
+                    />
+                  </div>
+
+                  <div class="form__input-wrapper">
+                    <label for="phone"></label>
+                    <input
+                      class="input-text"
+                      id="phone"
+                      type="tel"
+                      name="phone"
+                      placeholder="Телефон"
+                    />
+                  </div>
+
+                  <div class="form__input-wrapper">
+                    <label for="email"></label>
+                    <input
+                      class="input-text"
+                      id="email"
+                      type="email"
+                      name="email"
+                      placeholder="Почта"
+                    />
+                  </div>
+                </div>
+                <div class="column-right">
+                  <textarea
+                    class="form__message input-text five area-message"
+                    name="text"
+                    placeholder="Комментарий"
+                  ></textarea>
+                </div>
               </div>
-
-              <div class="form__input-wrapper area-phone">
-                <label for="phone"></label>
-                <input
-                  class="input-text"
-                  id="phone"
-                  type="tel"
-                  name="phone"
-                  placeholder="Телефон"
-                />
-              </div>
-
-              <div class="form__input-wrapper area-email">
-                <label for="email"></label>
-                <input
-                  class="input-text"
-                  id="email"
-                  type="email"
-                  name="email"
-                  placeholder="Почта"
-                />
-              </div>
-
-              <textarea
-                class="form__message input-text five area-message"
-                name="text"
-                placeholder="Комментарий"
-              ></textarea>
-
-              <div class="form__bottom-wrapper active area-email">
+              <div class="form__bottom-wrapper active">
                 <input
                   class="form__checkbox visually-hidden"
                   id="agree"
