@@ -1353,6 +1353,9 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: $tablet-width) {
   .tonnage {
+        margin-left: -3.2%;
+    margin-right: -3.2%;
+
     height: 296px;
   }
 }
@@ -1804,6 +1807,9 @@ input[type="radio"].visually-hidden {
   .production__top-wrapper {
     margin-bottom: 0;
     height: 296px;
+        margin-left: -3.2%;
+    margin-right: -3.2%;
+
   }
 }
 @media (min-width: $desktop-width) {
@@ -2225,9 +2231,12 @@ input[type="radio"].visually-hidden {
 }
 
 .shipment__wrapper {
-  padding: 0 15px;
+  width: 340px; 
   text-align: center;
+  margin: 0 auto;
 }
+
+
 
 .shipment__title {
   margin: 0 0 16px;
@@ -2237,12 +2246,30 @@ input[type="radio"].visually-hidden {
   margin: 0 0 10px;
 }
 
+@media (min-width: $tablet-width) {
+ .shipment__description {
+  font-size: 18px;
+  line-height: 120%;
+}
+}
+
 .shipment__text {
   margin-bottom: 50px;
 }
 
 .shipment__map-wrapper {
+  padding: 66px 0;
+      margin-left: -5.6%;
+    margin-right: -5.6%;
   background: url(../../img/map-bg.svg);
+}
+
+@media (min-width: $tablet-width) {
+.shipment__map-wrapper {
+   margin-left: -3.2%;
+    margin-right: -3.2%;
+  background: url(../../img/map-bg-tablet.svg);
+}
 }
 
 .shipment__map {
