@@ -1639,8 +1639,8 @@ input[type="radio"].visually-hidden {
       position: absolute;
       content: "";
       bottom: -158px;
-      left: calc(50% - 76px);
-      width: 152px;
+      left: calc(50% - 5px);
+      width: 153px;
       height: 148px;
       background: url(../../img/advantages-line-tablet.svg) no-repeat;
     }
@@ -1942,10 +1942,24 @@ input[type="radio"].visually-hidden {
   margin-bottom: 10px;
 }
 
+@media (min-width: $tablet-width) {
+  .product-type__wrapper {
+    width: 971px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+@media (min-width: $desktop-width) {
+  .product-type__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
 .product-type__image-wrapper {
   position: relative;
   width: 337px;
-  // width: 352px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 30px;
@@ -1965,8 +1979,9 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $tablet-width) {
   .product-type__image-wrapper {
-    width: 833px;
-    margin: 0 auto;
+    width: 100%;
+    text-align: right;
+    margin: 0;
 
     &::before {
       top: 300px;
@@ -1979,14 +1994,12 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $desktop-width) {
   .product-type__image-wrapper {
-    width: 54%;
+    width: 1046px;
     margin: 0 auto;
 
-    
     &::before {
       top: 275px;
       right: 110px;
-    
     }
   }
 }
@@ -1997,6 +2010,13 @@ input[type="radio"].visually-hidden {
 @media (min-width: $tablet-width) {
   .product-type__text-wrapper {
     position: absolute;
+    top: 315px;
+    left: 0;
+  }
+}
+@media (min-width: $desktop-width) {
+  .product-type__text-wrapper {
+    top: 360px;
   }
 }
 
