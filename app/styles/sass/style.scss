@@ -129,23 +129,11 @@ input[type="radio"].visually-hidden {
   }
 }
 
-// @media (min-width: 1366px) {
-//   .container {
-//     width: 1100px;
-//   }
-// }
-
 @media (min-width: 1920px) {
   .container {
     width: 1796px;
   }
 }
-
-// @media (min-width: 1920px) {
-//   .container {
-//     width: 1796px;
-//   }
-// }
 
 .header {
   margin-bottom: 12px;
@@ -604,7 +592,14 @@ input[type="radio"].visually-hidden {
   }
 }
 .icon-arrow-right::after {
-  display: none;
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  right: 0;
+  top: 4px;
+  background: url(../../img/arrow-link.svg) no-repeat center;
+  background-size: contain;
 }
 
 @media (min-width: $tablet-width) {
@@ -636,17 +631,6 @@ input[type="radio"].visually-hidden {
   .icon-arrow-right::after {
     display: block;
   }
-}
-
-.icon-arrow-right::after {
-  position: absolute;
-  content: "";
-  width: 16px;
-  height: 16px;
-  right: -23px;
-  top: 4px;
-  background: url(../../img/arrow-link.svg) no-repeat center;
-  background-size: contain;
 }
 
 .click-style > a {
@@ -742,7 +726,6 @@ input[type="radio"].visually-hidden {
   .slider-advantages.swiper {
     height: 364px;
     width: 965px;
-    // margin-left: 0;
     margin-left: auto;
     margin-right: auto;
   }
@@ -884,7 +867,6 @@ input[type="radio"].visually-hidden {
 .about-us {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -1050,8 +1032,13 @@ input[type="radio"].visually-hidden {
 
 .about-us__link {
   position: relative;
+  padding-right: 25px;
   color: $bg-orange;
   font-weight: 700;
+
+  .icon-arrow-right::after {
+    display: block;
+  }
 }
 
 // -----------------------signature------------------
@@ -1084,12 +1071,30 @@ input[type="radio"].visually-hidden {
   margin-bottom: 100px;
 }
 
+.types-of-flour__card .icon-arrow-right::after {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .types-of-flour {
     margin-bottom: 104px;
     gap: 30px;
   }
+
+  .types-of-flour__card:hover {
+    .card__name {
+      padding-right: 55px;
+    }
+
+    .icon-arrow-right::after {
+      display: block;
+      width: 45px;
+      height: 18px;
+      background: url(../../img/arrow-flour-card.svg) no-repeat center;
+    }
+  }
 }
+
 @media (min-width: $desktop-width) {
   .types-of-flour {
     margin-bottom: 140px;
@@ -1165,6 +1170,7 @@ input[type="radio"].visually-hidden {
 }
 
 .card__name {
+  display: inline-block;
   position: relative;
   margin: 0;
   font-weight: 700;
@@ -1176,17 +1182,12 @@ input[type="radio"].visually-hidden {
     display: none;
   }
 }
-@media (min-width: $tablet-width) {
+
+@media (min-width: $desktop-width) {
   .card__name {
     font-size: 26px;
     line-height: 110%;
   }
-}
-
-.card__name.icon-arrow-right::after {
-  width: 45px;
-  height: 18px;
-  background: url(../../img/arrow-flour-card.svg) no-repeat center;
 }
 
 // -----------------------purchase------------------
@@ -2890,12 +2891,20 @@ input[type="radio"].visually-hidden {
 
 .page-footer__link-cite {
   position: relative;
+  padding-right: 25px;
   font-size: 16px;
   line-height: 130%;
 }
 
-.page-footer__link.icon-arrow-right::after {
+.page-footer__link-cite.icon-arrow-right::after {
+  width: 16px;
+  height: 16px;
   background: url(../../img/arrow-brown-link.svg) no-repeat center;
+}
+.page-footer__link-cite:hover.icon-arrow-right::after {
+  width: 16px;
+  height: 16px;
+  background: url(../../img/arrow-link.svg) no-repeat center;
 }
 
 .page-footer__adress {
@@ -2994,6 +3003,7 @@ input[type="radio"].visually-hidden {
 
 .page-footer__link-politics {
   position: relative;
+  padding-right: 25px;
   font-size: 16px;
   line-height: 130%;
   color: $bg-orange;

@@ -556,7 +556,14 @@ input[type=radio].visually-hidden {
   background: url(../../img/icon-photo-menu.svg) no-repeat center
 }
 .icon-arrow-right::after {
-  display: none
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  right: 0;
+  top: 4px;
+  background: url(../../img/arrow-link.svg) no-repeat center;
+  background-size: contain
 }
 @media (min-width:1024px) {
   .header__navigation .sub-navigation__item {
@@ -582,16 +589,6 @@ input[type=radio].visually-hidden {
 }
 .header__navigation .sub-navigation__item:hover .icon-arrow-right::after {
   display: block
-}
-.icon-arrow-right::after {
-  position: absolute;
-  content: "";
-  width: 16px;
-  height: 16px;
-  right: -23px;
-  top: 4px;
-  background: url(../../img/arrow-link.svg) no-repeat center;
-  background-size: contain
 }
 .click-style > a {
   position: relative;
@@ -986,8 +983,12 @@ input[type=radio].visually-hidden {
 }
 .about-us__link {
   position: relative;
+  padding-right: 25px;
   color: #fd9f32;
   font-weight: 700
+}
+.about-us__link .icon-arrow-right::after {
+  display: block
 }
 .signature__image {
   margin-right: 14px
@@ -1016,10 +1017,22 @@ input[type=radio].visually-hidden {
   gap: 24px;
   margin-bottom: 100px
 }
+.types-of-flour__card .icon-arrow-right::after {
+  display: none
+}
 @media (min-width:1024px) {
   .types-of-flour {
     margin-bottom: 104px;
     gap: 30px
+  }
+  .types-of-flour__card:hover .card__name {
+    padding-right: 55px
+  }
+  .types-of-flour__card:hover .icon-arrow-right::after {
+    display: block;
+    width: 45px;
+    height: 18px;
+    background: url(../../img/arrow-flour-card.svg) no-repeat center
   }
 }
 @media (min-width:1920px) {
@@ -1085,6 +1098,7 @@ input[type=radio].visually-hidden {
   }
 }
 .card__name {
+  display: inline-block;
   position: relative;
   margin: 0;
   font-weight: 700;
@@ -1095,16 +1109,11 @@ input[type=radio].visually-hidden {
     display: none
   }
 }
-@media (min-width:1024px) {
+@media (min-width:1920px) {
   .card__name {
     font-size: 26px;
     line-height: 110%
   }
-}
-.card__name.icon-arrow-right::after {
-  width: 45px;
-  height: 18px;
-  background: url(../../img/arrow-flour-card.svg) no-repeat center
 }
 .purchase {
   position: relative;
@@ -2735,11 +2744,19 @@ input[type=radio].visually-hidden {
 }
 .page-footer__link-cite {
   position: relative;
+  padding-right: 25px;
   font-size: 16px;
   line-height: 130%
 }
-.page-footer__link.icon-arrow-right::after {
+.page-footer__link-cite.icon-arrow-right::after {
+  width: 16px;
+  height: 16px;
   background: url(../../img/arrow-brown-link.svg) no-repeat center
+}
+.page-footer__link-cite:hover.icon-arrow-right::after {
+  width: 16px;
+  height: 16px;
+  background: url(../../img/arrow-link.svg) no-repeat center
 }
 .page-footer__adress {
   margin-bottom: 42px
@@ -2849,6 +2866,7 @@ input[type=radio].visually-hidden {
 }
 .page-footer__link-politics {
   position: relative;
+  padding-right: 25px;
   font-size: 16px;
   line-height: 130%;
   color: #fd9f32
