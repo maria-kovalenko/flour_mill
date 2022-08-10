@@ -860,6 +860,7 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1580px) {
   .section-top {
     display: flex;
+    justify-content: center;
     flex-direction: row;
   }
 }
@@ -880,9 +881,9 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 1580px) {
   .about-us {
+    width: 485px;
     flex-wrap: wrap;
     justify-content: flex-start;
-    // margin-top: -94px;
   }
 }
 
@@ -906,9 +907,32 @@ input[type="radio"].visually-hidden {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1580px) {
   .about-us__video-wrapper {
+    width: 430px;
+    height: 230px;
+
     margin-bottom: 30px;
+  }
+}
+
+.about-us__video {
+  border-radius: 4px;
+  height: 200px;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .about-us__video {
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .about-us__video {
+    width: 430px;
+    height: 230px;
   }
 }
 
@@ -919,23 +943,11 @@ input[type="radio"].visually-hidden {
   top: calc(50% - 35px);
 }
 
-.about-us__video {
-  border-radius: 4px;
-  height: 200px;
-  width: 100%;
-}
-
 @media (min-width: 768px) {
   .about-us__text {
     width: 485px;
   }
 }
-
-// @media (min-width: 1366px) and (max-width: 1580px) {
-//   .about-us__text {
-//     width: 585px;
-//   }
-// }
 
 @media (min-width: 1580px) {
   .about-us__text {
@@ -955,14 +967,6 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1366px) and (max-width: 1579px) {
   .about-us__text-bottom {
     justify-content: flex-start;
-  }
-}
-
-@media (min-width: 1024px) {
-  .about-us__video {
-    border-radius: 4px;
-    width: 100%;
-    height: 100%;
   }
 }
 
@@ -2288,6 +2292,12 @@ input[type="radio"].visually-hidden {
   .request {
     margin-left: -3.2%;
     margin-right: -3.2%;
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: $tablet-width) {
+  .request {
+    padding-bottom: 70px;
   }
 }
 
@@ -2299,6 +2309,15 @@ input[type="radio"].visually-hidden {
   .request__wrapper {
     padding-top: 53px;
     width: 877px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: $desktop-width) {
+  .request__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 81px;
+    width: 1333px;
     margin: 0 auto;
   }
 }
@@ -2316,6 +2335,14 @@ input[type="radio"].visually-hidden {
   }
 }
 
+@media (min-width: $desktop-width) {
+  .request__text-wrapper {
+    display: block;
+    width: 317px;
+    margin-bottom: 0;
+  }
+}
+
 .request__text {
   width: 337px;
   margin-bottom: 26px;
@@ -2327,9 +2354,21 @@ input[type="radio"].visually-hidden {
     margin-bottom: 0;
   }
 }
+@media (min-width: $desktop-width) {
+  .request__text {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
 
 .request__title {
   margin: 0 0 16px;
+}
+
+@media (min-width: $desktop-width) {
+  .request__title {
+    margin: 0 0 32px;
+  }
 }
 
 .request__description {
@@ -2359,6 +2398,12 @@ input[type="radio"].visually-hidden {
   }
 }
 
+@media (min-width: $desktop-width) {
+  .request__number {
+    width: 100%;
+  }
+}
+
 .number__text {
   margin: 0 0 8px;
 }
@@ -2382,11 +2427,16 @@ input[type="radio"].visually-hidden {
 @media (min-width: $tablet-width) {
   .column-left {
     width: 392px;
+    margin-right: 55px;
   }
-}
-@media (min-width: $tablet-width) {
+
   .column-right {
     width: 430px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .column-left {
+    margin-right: 45px;
   }
 }
 
@@ -2461,6 +2511,13 @@ input[type="radio"].visually-hidden {
     text-align: center;
   }
 }
+@media (min-width: $desktop-width) {
+  .form__politics {
+    margin-top: 32px;
+    margin-bottom: 50px;
+    text-align: left;
+  }
+}
 
 .politics__label {
   position: relative;
@@ -2500,11 +2557,16 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 768px) {
   .form__button-wrapper {
-  text-align: center;
-}
+    text-align: center;
+  }
   .form__button {
-  width: 200px;
+    width: 200px;
+  }
 }
+@media (min-width: $desktop-width) {
+  .form__button-wrapper {
+    text-align: left;
+  }
 }
 
 // ------------------------page-footer ------------------

@@ -790,6 +790,9 @@ input[type=radio].visually-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -817,6 +820,7 @@ input[type=radio].visually-hidden {
 }
 @media (min-width:1580px) {
   .about-us {
+    width: 485px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: start;
@@ -842,9 +846,29 @@ input[type=radio].visually-hidden {
     height: 220px
   }
 }
-@media (min-width:1024px) {
+@media (min-width:1580px) {
   .about-us__video-wrapper {
+    width: 430px;
+    height: 230px;
     margin-bottom: 30px
+  }
+}
+.about-us__video {
+  border-radius: 4px;
+  height: 200px;
+  width: 100%
+}
+@media (min-width:1024px) {
+  .about-us__video {
+    border-radius: 4px;
+    width: 100%;
+    height: 100%
+  }
+}
+@media (min-width:1024px) {
+  .about-us__video {
+    width: 430px;
+    height: 230px
   }
 }
 .about-us__play {
@@ -852,11 +876,6 @@ input[type=radio].visually-hidden {
   z-index: 1;
   left: calc(50% - 35px);
   top: calc(50% - 35px)
-}
-.about-us__video {
-  border-radius: 4px;
-  height: 200px;
-  width: 100%
 }
 @media (min-width:768px) {
   .about-us__text {
@@ -888,13 +907,6 @@ input[type=radio].visually-hidden {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start
-  }
-}
-@media (min-width:1024px) {
-  .about-us__video {
-    border-radius: 4px;
-    width: 100%;
-    height: 100%
   }
 }
 .about-us__title {
@@ -2074,7 +2086,13 @@ input[type=radio].visually-hidden {
 @media (min-width:1024px) {
   .request {
     margin-left: -3.2%;
-    margin-right: -3.2%
+    margin-right: -3.2%;
+    padding-bottom: 80px
+  }
+}
+@media (min-width:1024px) {
+  .request {
+    padding-bottom: 70px
   }
 }
 .request__wrapper {
@@ -2084,6 +2102,19 @@ input[type=radio].visually-hidden {
   .request__wrapper {
     padding-top: 53px;
     width: 877px;
+    margin: 0 auto
+  }
+}
+@media (min-width:1920px) {
+  .request__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 81px;
+    width: 1333px;
     margin: 0 auto
   }
 }
@@ -2102,6 +2133,13 @@ input[type=radio].visually-hidden {
     margin-bottom: 70px
   }
 }
+@media (min-width:1920px) {
+  .request__text-wrapper {
+    display: block;
+    width: 317px;
+    margin-bottom: 0
+  }
+}
 .request__text {
   width: 337px;
   margin-bottom: 26px
@@ -2112,8 +2150,19 @@ input[type=radio].visually-hidden {
     margin-bottom: 0
   }
 }
+@media (min-width:1920px) {
+  .request__text {
+    width: 100%;
+    margin-bottom: 40px
+  }
+}
 .request__title {
   margin: 0 0 16px
+}
+@media (min-width:1920px) {
+  .request__title {
+    margin: 0 0 32px
+  }
 }
 .request__description {
   width: 317px;
@@ -2133,6 +2182,11 @@ input[type=radio].visually-hidden {
 @media (min-width:1024px) {
   .request__number {
     width: 243px
+  }
+}
+@media (min-width:1920px) {
+  .request__number {
+    width: 100%
   }
 }
 .number__text {
@@ -2157,12 +2211,16 @@ input[type=radio].visually-hidden {
 }
 @media (min-width:1024px) {
   .column-left {
-    width: 392px
+    width: 392px;
+    margin-right: 55px
   }
-}
-@media (min-width:1024px) {
   .column-right {
     width: 430px
+  }
+}
+@media (min-width:1920px) {
+  .column-left {
+    margin-right: 45px
   }
 }
 .form__input-wrapper {
@@ -2312,6 +2370,13 @@ input[type=radio].visually-hidden {
     text-align: center
   }
 }
+@media (min-width:1920px) {
+  .form__politics {
+    margin-top: 32px;
+    margin-bottom: 50px;
+    text-align: left
+  }
+}
 .politics__label {
   position: relative;
   padding: 0 0 0 48px
@@ -2349,6 +2414,11 @@ input[type=radio].visually-hidden {
   }
   .form__button {
     width: 200px
+  }
+}
+@media (min-width:1920px) {
+  .form__button-wrapper {
+    text-align: left
   }
 }
 .page-footer {
