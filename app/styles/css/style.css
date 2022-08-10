@@ -88,7 +88,14 @@ input[type=radio].visually-hidden {
 }
 @media (min-width:1580px) {
   body {
-    background-size: 100% 1100px
+    background-size: 100% 1100px;
+    background-position: center 0
+  }
+}
+@media (min-width:1920px) {
+  body {
+    background-size: 1920px 1100px;
+    background-position: center 0
   }
 }
 .container {
@@ -337,6 +344,9 @@ input[type=radio].visually-hidden {
     width: 24px;
     height: 24px
   }
+}
+.social__link:hover path {
+  fill: #fd9f32
 }
 .header__contacts {
   -ms-grid-column: 1;
@@ -839,6 +849,7 @@ input[type=radio].visually-hidden {
 }
 @media (min-width:1580px) {
   .about-us {
+    margin-top: -100px;
     width: 485px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
