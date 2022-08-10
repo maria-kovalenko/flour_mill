@@ -47,6 +47,12 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: $bg-darkbrown;
+
+  &:focus,
+  &:hover,
+  &:active {
+    color: #fd9f32;
+  }
 }
 
 .button {
@@ -102,6 +108,11 @@ input[type="radio"].visually-hidden {
     background: url(../../img/bg-tablet.png) no-repeat;
     background-position: 0 0;
     background-size: 100% 1240px;
+  }
+}
+@media (min-width: 1580px) {
+  body {
+    background-size: 100% 1100px;
   }
 }
 
@@ -466,6 +477,11 @@ input[type="radio"].visually-hidden {
     &:last-child {
       margin-right: 0;
     }
+
+    &:hover a {
+      color: #fd9f32;
+    }
+
     &::after {
       display: none;
     }
@@ -2589,6 +2605,10 @@ input[type="radio"].visually-hidden {
 .politics__link {
   color: #fff;
   border-bottom: 1px solid #fff;
+
+  &:hover {
+    border-color: #fd9f32;
+  }
 }
 
 .form__button {
@@ -2641,6 +2661,8 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     grid-template-columns: 247px 337px 263px;
     grid-template-rows: auto;
+    padding-top: 54px;
+    padding-bottom: 30px;
   }
 }
 
@@ -2655,8 +2677,8 @@ input[type="radio"].visually-hidden {
   }
 
   .page-footer__logo {
-  width: 168px;
-}
+    width: 168px;
+  }
 }
 .page-footer__contacts {
   display: inline-block;
@@ -2739,6 +2761,31 @@ input[type="radio"].visually-hidden {
     grid-column: 2/4;
     grid-row: 1/2;
   }
+
+  .footer__navigation .navigation__list {
+    display: flex;
+    padding: 0;
+  }
+
+  .footer__navigation .navigation__item {
+    margin-right: 70px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &::before {
+      display: none;
+    }
+    &::after {
+      display: none;
+    }
+  }
+
+  .footer__navigation .navigation__item > a {
+    font-size: 22px;
+    line-height: 120%;
+  }
 }
 
 .footer-sub-item {
@@ -2747,6 +2794,24 @@ input[type="radio"].visually-hidden {
   a {
     font-size: 16px;
     line-height: 130%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer-sub-item {
+    padding: 8px 0;
+    margin-bottom: 0;
+    background-color: transparent;
+
+    &:hover a {
+      color: #fd9f32;
+      border-color: #fd9f32;
+    }
+    a {
+      font-size: 16px;
+      line-height: 130%;
+      border-bottom: 1px solid $bg-darkbrown;
+    }
   }
 }
 

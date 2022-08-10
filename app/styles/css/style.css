@@ -29,6 +29,11 @@ a {
   cursor: pointer;
   color: #664b42
 }
+a:active,
+a:focus,
+a:hover {
+  color: #fd9f32
+}
 .button {
   display: inline-block;
   margin-bottom: 5px;
@@ -79,6 +84,11 @@ input[type=radio].visually-hidden {
     background: url(../../img/bg-tablet.png) no-repeat;
     background-position: 0 0;
     background-size: 100% 1240px
+  }
+}
+@media (min-width:1580px) {
+  body {
+    background-size: 100% 1100px
   }
 }
 .container {
@@ -427,6 +437,9 @@ input[type=radio].visually-hidden {
   }
   .header__navigation .navigation__item:last-child {
     margin-right: 0
+  }
+  .header__navigation .navigation__item:hover a {
+    color: #fd9f32
   }
   .header__navigation .navigation__item::after {
     display: none
@@ -2443,6 +2456,9 @@ input[type=radio].visually-hidden {
   color: #fff;
   border-bottom: 1px solid #fff
 }
+.politics__link:hover {
+  border-color: #fd9f32
+}
 .form__button {
   width: 100%
 }
@@ -2490,7 +2506,9 @@ input[type=radio].visually-hidden {
     -ms-grid-columns: 247px 337px 263px;
     grid-template-columns: 247px 337px 263px;
     -ms-grid-rows: auto;
-    grid-template-rows: auto
+    grid-template-rows: auto;
+    padding-top: 54px;
+    padding-bottom: 30px
   }
 }
 .page-footer__logo-wrapper {
@@ -2592,6 +2610,28 @@ input[type=radio].visually-hidden {
     -ms-grid-row-span: 1;
     grid-row: 1/2
   }
+  .footer__navigation .navigation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0
+  }
+  .footer__navigation .navigation__item {
+    margin-right: 70px
+  }
+  .footer__navigation .navigation__item:last-child {
+    margin-right: 0
+  }
+  .footer__navigation .navigation__item::before {
+    display: none
+  }
+  .footer__navigation .navigation__item::after {
+    display: none
+  }
+  .footer__navigation .navigation__item > a {
+    font-size: 22px;
+    line-height: 120%
+  }
 }
 .footer-sub-item {
   padding: 12px;
@@ -2600,6 +2640,22 @@ input[type=radio].visually-hidden {
 .footer-sub-item a {
   font-size: 16px;
   line-height: 130%
+}
+@media (min-width:1024px) {
+  .footer-sub-item {
+    padding: 8px 0;
+    margin-bottom: 0;
+    background-color: transparent
+  }
+  .footer-sub-item:hover a {
+    color: #fd9f32;
+    border-color: #fd9f32
+  }
+  .footer-sub-item a {
+    font-size: 16px;
+    line-height: 130%;
+    border-bottom: 1px solid #664b42
+  }
 }
 .page-footer__link-cite-wrapper {
   position: relative;
