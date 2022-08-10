@@ -2077,6 +2077,7 @@ input[type=radio].visually-hidden {
   width: 100%
 }
 .request {
+  position: relative;
   margin-left: -5.6%;
   margin-right: -5.6%;
   padding-bottom: 63px;
@@ -2089,10 +2090,44 @@ input[type=radio].visually-hidden {
     margin-right: -3.2%;
     padding-bottom: 80px
   }
+  .request::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 238px;
+    height: 243px;
+    background: url(../../img/request-left-bg.png) no-repeat;
+    background-size: 200%;
+    background-position: 100% -20%
+  }
+  .request::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    width: 293px;
+    height: 243px;
+    background: url(../../img/request-right-bg.png) no-repeat;
+    background-size: 145%;
+    background-position: 2% -30%
+  }
 }
-@media (min-width:1024px) {
+@media (min-width:1920px) {
   .request {
     padding-bottom: 70px
+  }
+  .request::before {
+    width: 354px;
+    height: 325px;
+    background-size: 170%;
+    background-position: 115% -36%
+  }
+  .request::after {
+    width: 442px;
+    height: 366px;
+    background-size: 145%;
+    background-position: 2% -30%
   }
 }
 .request__wrapper {
@@ -2198,6 +2233,9 @@ input[type=radio].visually-hidden {
   line-height: 110%;
   font-weight: 700;
   color: #fd9f32
+}
+.request__form-wrapper {
+  z-index: 1
 }
 @media (min-width:1024px) {
   .form__wrapper {

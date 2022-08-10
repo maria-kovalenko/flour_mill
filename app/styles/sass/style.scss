@@ -2280,9 +2280,9 @@ input[type="radio"].visually-hidden {
 // ------------------------request ------------------
 
 .request {
+  position: relative;
   margin-left: -5.6%;
   margin-right: -5.6%;
-
   padding-bottom: 63px;
   background-color: $bg-darkbrown;
   color: #f4eee5;
@@ -2293,11 +2293,47 @@ input[type="radio"].visually-hidden {
     margin-left: -3.2%;
     margin-right: -3.2%;
     padding-bottom: 80px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+      width: 238px;
+      height: 243px;
+      background: url(../../img/request-left-bg.png) no-repeat;
+      background-size: 200%;
+      background-position: 100% -20%;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 0;
+      width: 293px;
+      height: 243px;
+      background: url(../../img/request-right-bg.png) no-repeat;
+      background-size: 145%;
+      background-position: 2% -30%;
+    }
   }
 }
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .request {
     padding-bottom: 70px;
+
+    &::before {
+      width: 354px;
+      height: 325px;
+      background-size: 170%;
+      background-position: 115% -36%;
+    }
+    &::after {
+      width: 442px;
+      height: 366px;
+      background-size: 145%;
+      background-position: 2% -30%;
+    }
   }
 }
 
@@ -2417,6 +2453,10 @@ input[type="radio"].visually-hidden {
 }
 
 // ------------------------form ------------------
+
+.request__form-wrapper {
+  z-index: 1;
+}
 
 @media (min-width: $tablet-width) {
   .form__wrapper {
