@@ -242,8 +242,17 @@ input[type=radio].visually-hidden {
     display: block
   }
 }
+.header__search:hover path {
+  stroke: #fd9f32
+}
+.header__search:hover circle {
+  stroke: #fd9f32
+}
 .icon-number-product {
   display: none
+}
+.header__basket:hover path {
+  fill: #fd9f32
 }
 .language {
   display: none;
@@ -886,6 +895,9 @@ input[type=radio].visually-hidden {
   z-index: 1;
   left: calc(50% - 35px);
   top: calc(50% - 35px)
+}
+.about-us__play button {
+  cursor: pointer
 }
 @media (min-width:768px) {
   .about-us__text {

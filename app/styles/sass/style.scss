@@ -276,9 +276,26 @@ input[type="radio"].visually-hidden {
   }
 }
 
+.header__search:hover {
+  path {
+    stroke: $bg-orange;
+  }
+
+  circle {
+    stroke: $bg-orange;
+  }
+}
+
 .icon-number-product {
   display: none;
 }
+
+.header__basket:hover {
+  path {
+    fill: $bg-orange;
+  }
+}
+
 
 // -------------------------------- header__language ---------------------
 
@@ -939,6 +956,10 @@ input[type="radio"].visually-hidden {
   z-index: 1;
   left: calc(50% - 35px);
   top: calc(50% - 35px);
+
+  button {
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 768px) {
