@@ -2632,19 +2632,39 @@ input[type="radio"].visually-hidden {
 .page-footer__wrapper {
   padding-top: 33px;
   padding-bottom: 83px;
-  display: grid;
 }
 
-.page-footer__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 28px;
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    column-gap: 53px;
+    display: grid;
+    grid-template-columns: 247px 670px;
+    grid-template-rows: auto;
+  }
 }
 
+.page-footer__logo-wrapper {
+  display: inline-block;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__logo-wrapper {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
 .page-footer__contacts {
+  display: inline-block;
+  float: right;
   text-align: end;
   min-width: 206px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__contacts {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
 }
 
 .footer-contacts__number {
@@ -2665,11 +2685,26 @@ input[type="radio"].visually-hidden {
 
 .page-footer__social-wrapper {
   text-align: center;
+  margin-top: 28px;
+
   margin-bottom: 24px;
+}
+@media (min-width: $tablet-width) {
+  .page-footer__social-wrapper {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
 }
 
 .footer__navigation {
   margin-bottom: 49px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__navigation {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
 }
 
 .footer-sub-item {
@@ -2681,12 +2716,29 @@ input[type="radio"].visually-hidden {
   }
 }
 
-.footer-bottom {
+
+.page-footer__link-cite-wrapper {
+  position: relative;
   text-align: center;
 }
 
-.footer-bottom__adress {
+.page-footer__link-cite {
+  position: relative;
+}
+
+.page-footer__link.icon-arrow-right::after {
+  background: url(../../img/arrow-brown-link.svg) no-repeat center;
+}
+
+.page-footer__adress {
   margin-bottom: 42px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__adress {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
 }
 
 .adress {
@@ -2714,28 +2766,21 @@ input[type="radio"].visually-hidden {
   margin: 0 0 10px;
 }
 
-.page-footer__link-top-wrapper {
-  position: relative;
-}
-
-.page-footer__link {
-  position: relative;
-}
-
-.page-footer__link.icon-arrow-right::after {
-  background: url(../../img/arrow-brown-link.svg) no-repeat center;
-}
-
-.page-footer__link-bottom-wrapper {
+.page-footer__link-politics-wrapper {
   position: relative;
   margin-bottom: 10px;
+  text-align: center;
 }
 
-.footer-bottom__link {
+.page-footer__link-politics {
   position: relative;
   font-size: 16px;
   line-height: 130%;
   color: $bg-orange;
+}
+
+.page-footer__copyrite {
+  text-align: center;
 }
 
 .copyrite__text {
