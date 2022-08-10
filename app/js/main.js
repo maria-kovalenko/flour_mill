@@ -29,7 +29,7 @@ const swiperAdvantages = new Swiper(".slider-advantages", {
 });
 
 document
-  .querySelector(".form__bottom-wrapper")
+  .querySelector(".politics__label")
   .addEventListener("click", function () {
     this.classList.toggle("active");
   });

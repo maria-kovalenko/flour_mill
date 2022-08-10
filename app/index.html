@@ -882,23 +882,28 @@
                 </div>
                 <div class="column-right">
                   <textarea
-                    class="form__message input-text five area-message"
+                    class="form__message input-text"
                     name="text"
                     placeholder="Комментарий"
                   ></textarea>
                 </div>
               </div>
-              <div class="form__bottom-wrapper active">
-                <input
-                  class="form__checkbox visually-hidden"
-                  id="agree"
-                  type="checkbox"
-                  name="email"
-                />
-                <label for="agree"
-                  >Я согласен с условиями
-                  <a class="form__link">политики конфиденциальноcти</a></label
-                >
+
+              <div class="form__politics politics">
+                <div class="politics__wrapper active">
+                  <input
+                    class="politics__checkbox visually-hidden"
+                    id="agree"
+                    type="checkbox"
+                    name="email"
+                  />
+                  <label for="agree" class="politics__label active"
+                    >Я согласен с условиями
+                    <a class="politics__link"
+                      >политики конфиденциальноcти</a
+                    ></label
+                  >
+                </div>
               </div>
 
               <div class="form__button-wrapper">
