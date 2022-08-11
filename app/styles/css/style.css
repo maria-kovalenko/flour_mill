@@ -228,7 +228,10 @@ input[type=radio].visually-hidden {
   display: flex;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  justify-content: flex-end
+  justify-content: flex-end;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline
 }
 @media (min-width:1024px) {
   .header__icons {
@@ -411,14 +414,22 @@ input[type=radio].visually-hidden {
     display: none
   }
 }
+.showMenu {
+  display: block
+}
 .header__navigation {
+  display: none;
+  height: 100%;
+  z-index: 10;
+  position: absolute;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   grid-row: 4/5;
-  margin-top: 8px;
+  top: 0;
+  margin-top: 66px;
   width: 100%;
   background-color: #fff
 }
@@ -429,6 +440,7 @@ input[type=radio].visually-hidden {
     width: 877px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
     padding: 0 55px;
     -ms-grid-column: 1;
     -ms-grid-column-span: 5;
@@ -2762,7 +2774,13 @@ input[type=radio].visually-hidden {
   }
 }
 .page-footer .sub-navigation {
-  margin-top: 16px
+  margin-top: 16px;
+  display: none
+}
+@media (min-width:1024px) {
+  .page-footer .sub-navigation {
+    display: block
+  }
 }
 .footer-sub-item {
   padding: 12px;
