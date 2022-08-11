@@ -305,15 +305,8 @@ input[type="radio"].visually-hidden {
 
 // -------------------------------- header__language ---------------------
 
-.language {
+.header__language {
   display: none;
-  width: 40px;
-  min-height: 21px;
-  font-size: 16px;
-  line-height: 130%;
-  // display: none;
-  // background-color: #fff;
-  // z-index: 2;
 }
 
 @media (min-width: $tablet-width) {
@@ -323,19 +316,41 @@ input[type="radio"].visually-hidden {
     grid-row: 1/2;
   }
 }
-
-.language__list {
+.language__wrapper {
   position: relative;
+  width: 43px;
+  height: 21px;
+  border: none;
 }
 
-.language__list.arrow::before {
-  padding: 3px;
+.language__wrapper select {
+  width: 100%;
+  padding-right: 10px;
+  font-size: 16px;
+  color: $bg-darkbrown;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.language__wrapper select::-ms-expand {
+  display: none;
 }
 
-.language__list.arrow--down.arrow::before {
-  right: 0;
+.language__arrow {
+  position: absolute;
+  z-index: -1;
+  border-bottom: 0;
+  right: 2px;
   top: 6px;
+  border: solid $bg-orange;
+  border-width: 0 2px 2px 0;
+  padding: 3px;
+  transform: rotate(45deg);
 }
+
 // -------------------------------- social ---------------------
 
 .social {
