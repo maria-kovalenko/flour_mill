@@ -1640,7 +1640,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  gap: 50px;
+  /* gap: 50px; */
   text-align: center;
 }
 .advantages__list::after {
@@ -1685,6 +1685,11 @@ input[type="radio"].visually-hidden {
   position: relative;
   width: 274px;
   padding-top: 106px;
+  margin-bottom: 50px;
+}
+
+.advantages__item:last-child {
+  margin-bottom: 0;
 }
 .advantages__item--weight::before {
   position: absolute;
