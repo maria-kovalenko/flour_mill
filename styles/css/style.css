@@ -2545,6 +2545,7 @@ input[type="radio"].visually-hidden {
 .politics__label {
   position: relative;
   padding: 0 0 0 48px;
+  cursor: pointer;
 }
 .politics__label::before {
   position: absolute;
