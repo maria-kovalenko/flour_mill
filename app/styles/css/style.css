@@ -417,18 +417,26 @@ input[type=radio].visually-hidden {
 .showMenu {
   display: block
 }
+.navigation__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+.navigation__top .header__search {
+  display: block
+}
 .header__navigation {
   display: none;
   height: 100%;
-  z-index: 10;
-  position: absolute;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   grid-row: 4/5;
-  top: 0;
   margin-top: 66px;
   width: 100%;
   background-color: #fff
