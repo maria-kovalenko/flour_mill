@@ -34,6 +34,8 @@ document
     this.classList.toggle("active");
   });
 
+// --------открытие мобильного меню--------
+
 const buttonMenuBurger = document.querySelector(".header__button-menu");
 const buttonviewСross = document.querySelector(".header__toggle--opened");
 const headerWrapper = document.querySelector(".header__wrapper");
@@ -63,8 +65,49 @@ buttonviewСross.addEventListener("click", function () {
 
     condition = "close";
 
-    // document.querySelectorAll(".navigation__list .open").forEach((element) => {
-    //   element.classList.remove("open");
-    // });
+    document.querySelectorAll(".navigation__list .open").forEach((element) => {
+      element.classList.remove("open");
+    });
   }
 });
+
+// --------------------------- открытие подменю шапки----------
+
+if (
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  )
+) {
+  // для мобильных устройств
+  document.querySelectorAll(".navigation__item").forEach((element) => {
+    element.addEventListener("click", OpenNavList);
+  });
+
+  function OpenNavList(event) {
+    event.stopPropagation();
+    if (this.classList.contains("open")) {
+      this.classList.remove("open");
+    } else {
+      this.classList.add("open");
+      let childrenLi = this.querySelectorAll("li");
+      if (childrenLi.length !== 0) {
+        childrenLi.forEach((element) => {
+          element.addEventListener("click", OpenNavList);
+        });
+      }
+    }
+  }
+} else {
+  //для обычных устройств
+  document.querySelectorAll(".first").forEach((element) => {
+    element.addEventListener("mouseover", function () {
+      element.classList.add("open");
+    });
+  });
+
+  document.querySelectorAll(".first").forEach((element) => {
+    element.addEventListener("mouseout", function () {
+      element.classList.remove("open");
+    });
+  });
+}
