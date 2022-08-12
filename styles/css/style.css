@@ -1104,8 +1104,10 @@ input[type="radio"].visually-hidden {
 }
 .types-of-flour {
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /* display: -ms-flexbox;
+  display: flex; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 155px);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1117,8 +1119,17 @@ input[type="radio"].visually-hidden {
 .types-of-flour__card .icon-arrow-right::after {
   display: none;
 }
+
+@media (min-width: 390px) {
+  .types-of-flour {
+    grid-template-columns: repeat(auto-fit, 163px);
+  }
+}
+
 @media (min-width: 1024px) {
   .types-of-flour {
+    grid-template-columns: repeat(auto-fit, 270px);
+
     margin-bottom: 104px;
     gap: 30px;
   }
@@ -1134,6 +1145,8 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 1920px) {
   .types-of-flour {
+    grid-template-columns: repeat(auto-fit, 332px);
+
     margin-bottom: 140px;
     gap: 34px;
   }
@@ -1148,7 +1161,7 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 390px) {
   .card {
-    width: 164px;
+    width: 163px;
   }
 }
 @media (min-width: 1024px) {
