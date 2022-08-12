@@ -793,7 +793,7 @@ input[type="radio"].visually-hidden {
 }
 .slider-pagination .swiper-pagination {
   top: 60px;
-  height: 30px;
+  height: 33px;
   margin-left: 34px;
   text-align: left;
 }
@@ -807,6 +807,7 @@ input[type="radio"].visually-hidden {
   width: 10px;
   height: 10px;
   opacity: 1;
+  vertical-align: bottom;
   margin: 0 11px !important;
   background-color: #b69d86;
 }
