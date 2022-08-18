@@ -984,6 +984,7 @@ input[type="radio"].visually-hidden {
 }
 .about-us__play button {
   cursor: pointer;
+  padding: 0;
 }
 @media (min-width: 768px) {
   .about-us__text {
