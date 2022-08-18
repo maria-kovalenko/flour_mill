@@ -1983,14 +1983,12 @@ input[type="radio"].visually-hidden {
     text-align: right;
     margin: 0;
   }
-
 }
 @media (min-width: 1920px) {
   .product-type__image-wrapper {
     width: 1046px;
     margin: 0 auto;
   }
-
 }
 .product-type__text-wrapper {
   max-width: 446px;
@@ -2193,13 +2191,13 @@ input[type="radio"].visually-hidden {
   padding: 66px 0;
   margin-left: -5.6%;
   margin-right: -5.6%;
-  background: url(../../img/map-bg.svg);
+  background: url(../../img/map-bg.png);
 }
 @media (min-width: 1024px) {
   .shipment__map-wrapper {
     margin-left: -3.2%;
     margin-right: -3.2%;
-    background: url(../../img/map-bg-tablet.svg);
+    background: url(../../img/map-bg-tablet.png);
   }
 }
 .shipment__map {
