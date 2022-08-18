@@ -1976,38 +1976,21 @@ input[type="radio"].visually-hidden {
   text-align: center;
   margin-bottom: 30px;
 }
-.product-type__image-wrapper::before {
-  position: absolute;
-  content: "";
-  top: 67px;
-  right: 65px;
-  width: 90px;
-  height: 90px;
-  background: url(../../img/icon-product-type.png) no-repeat;
-  background-size: contain;
-}
+
 @media (min-width: 1024px) {
   .product-type__image-wrapper {
     width: 100%;
     text-align: right;
     margin: 0;
   }
-  .product-type__image-wrapper::before {
-    top: 300px;
-    right: 110px;
-    width: 142px;
-    height: 142px;
-  }
+
 }
 @media (min-width: 1920px) {
   .product-type__image-wrapper {
     width: 1046px;
     margin: 0 auto;
   }
-  .product-type__image-wrapper::before {
-    top: 275px;
-    right: 110px;
-  }
+
 }
 .product-type__text-wrapper {
   max-width: 446px;
