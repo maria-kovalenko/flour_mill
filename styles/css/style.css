@@ -1106,8 +1106,10 @@ input[type="radio"].visually-hidden {
 }
 .types-of-flour {
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /* display: -ms-flexbox;
+  display: flex; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 155px);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
